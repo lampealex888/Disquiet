@@ -31,10 +31,10 @@ What do you do?
 :: Scene 2: Nightmare awakes you
 The clock chimes. It is now 2:00 AM.
 It's still raining outside, but that isn't what wakes you up.
-<span style="color:red">FRIEND</span>
+<span class = "dialogue">FRIEND</span>
 It's dark when you open your eyes. At some point in the night the power must have gone out, plunging the house into complete darkness. You can barely make out anything in front of you.
-HELLO FRIEND
-DID YOU MISS ME
+<span class = "dialogue">HELLO FRIEND
+DID YOU MISS ME</span>
 Including the incomprehensible shape  hovering directly over the couch.
 [[Run|Scene 3: Run (BRANCH SPLIT)]]
 <<if $scene_2b_key isnot true>>[[Freeze|Scene 2b Freeze]]<</if>>
@@ -46,17 +46,17 @@ Including the incomprehensible shape  hovering directly over the couch.
 
 :: Scene 2b Freeze
 You freeze like a cornered animal. Every muscle in your body locks up as the shape drifts closer like a black cloud, close enough to touch the tip of your nose. 
-DIDN’T I TELL YOU I’D BE BACK
+<span class = "dialogue">DIDN’T I TELL YOU I’D BE BACK
 I TOLD YOU
 I TOLD YOU
 I TOLD YOU
-I’LL NEVER LEAVE YOU
+I’LL NEVER LEAVE YOU</span>
 Each word is like a stake through your temples and a knife in your heart. Your breath sticks in your throat; trying to catch it just twists the knife further.
 [[Go back|Scene 2: Nightmare awakes you]]
 <<set $scene_2b_key to true>>
 
 :: Scene 2c Shut your eyes
-I CAN STILL SEE YOU
+<span class = "dialogue">I CAN STILL SEE YOU</span>
 It isn't quite a voice, but it's something you hear in the back of your head all the same, throbbing against the walls of your skull like a migraine.
 [[Go back|Scene 2: Nightmare awakes you]]
 <<set $scene_2c_key to true>>
@@ -85,8 +85,8 @@ You shut the door behind you and go downstairs, two steps at a time. There’s o
 You beeline for the spot tucked behind the stairs, conceal yourself behind a box of old clothes, and listen.
 You can hear something moving around upstairs. The floorboards creak softly, stop, and start again. They stop one more time.
 Very slowly, the door to the cellar creaks open, so quiet you can only hear it when you hold your breath. You can still hear it over the hammer of your heartbeat, drowning out the world. 
-FRIEND
-I FOUND YOU
+<span class = "dialogue">FRIEND
+I FOUND YOU</span>
 
 BAD END
 [[Go back|Scene 3: Run (BRANCH SPLIT)]]
@@ -100,8 +100,8 @@ You enter the hallway between your bedroom and the living room, running past the
 The room to your door is already open. Good. It won’t be able to tell you’re in here.
 You shut yourself in your closet, hide under a pile of laundry, and listen.
 You can hear something crawling across the floor, moving so stealthily you might miss the sound entirely compared to the ragged breathing coming from your throat. The scant light from under the door goes out.
- DON’T SCREAM FRIEND DON’T CRY FRIEND DON’T FIGHT FRIEND
-I WILL ALWAYS BE HERE
+<span class = "dialogue"> DON’T SCREAM FRIEND DON’T CRY FRIEND DON’T FIGHT FRIEND
+I WILL ALWAYS BE HERE</span>
 
 BAD END
 [[Go back|Scene 3: Run (BRANCH SPLIT)]]
@@ -116,7 +116,7 @@ The room to your door is already open. Good. It won’t be able to tell you’re
 You crawl under your bed, tuck your arms and legs in, and shut your eyes.
 Two seconds pass, then three. Then ten. Twenty. You start to breathe again.
 Then you hear the bed springs squeak above your head. 
-YOU CANNOT HIDE FRIEND
+<span class = "dialogue">YOU CANNOT HIDE FRIEND</span>
 
 BAD END
 [[Go back|Scene 3: Run (BRANCH SPLIT)]]
@@ -132,7 +132,7 @@ You have a feeling that you wouldn’t get very hard if you tried to hide. So yo
 :: Scene 7
 Your neighbors run a farm, but they aren’t home. In between you and your neighbor's house is a vast cornfield that stretches out far past the limits of your combined properties. The stalks rustle in the rain and wind. The fallen corn husks crunch and crinkle under your feet as you stand at the edge of the field. 
 Behind you, a voice howls with the wind, furious.
-DON’T RUN FROM ME FRIEND
+<span class = "dialogue">DON’T RUN FROM ME FRIEND</span>
 
 [[ Run deeper into the cornfield | 7a  ]]
 [[Run to the side of the house | 7b ]]
@@ -162,7 +162,7 @@ You never stop waiting.
 
 :: Scene 10: Stand your ground
 You tried running. You tried hiding. Somehow you already know this. But there’s still one thing you haven’t tried. One last option.
-FRIEND
+<span class = "dialogue">FRIEND</span>
 The voice crackles through your ears like static. Something is behind you, and even though you can’t hear it moving, you know it’s looming over you, close enough for you to realize that it has a mouth.
 WHAT DO YOU WANT TO PLAY NEXT
 
@@ -171,9 +171,11 @@ WHAT DO YOU WANT TO PLAY NEXT
 :: Scene 11: Stand your ground
 The static in your head falters for a moment. You get the sense that it’s taken aback, even though  everything else about it is beyond your understanding.
 
+<span class = "dialogue">
 FINE
 NO MORE GAMES NO MORE RUNNING NO MORE HIDING
 IT'S JUST US NOW
+</span>
 
 [["You're not real." | Scene 12: The Monster fights back]]
 [["Get out." | Scene 12: The Monster fights back]]
@@ -181,11 +183,12 @@ IT'S JUST US NOW
 
 :: Scene 12: The Monster fights back
 The not-so-distant rumble of thunder outside your house reminds you that the storm hasn’t stopped. If anything, it’s getting worse. Displeased, the voice in your head shakes in anger.
-
+<span class = "dialogue">
 NO
 NO NO NO
 BAD FRIEND VERY BAD
 WHO DO YOU THINK YOU’RE TALKING TO
+</span>
 
 [[“Nothing worth my time.”  | Scene 13: The Monster weakens]]
 [[“I’m not afraid of you.” | Scene 13: The Monster weakens]]
@@ -195,13 +198,14 @@ WHO DO YOU THINK YOU’RE TALKING TO
 :: Scene 13: The Monster weakens
 
 Now you know why the voice sounds so familiar. You’ve heard it many times before, always tucked away in the back of your head with all your most private thoughts and fears. It keeps coming back because it’s stubborn and hungry and it never gives up.
-
+<span class = "dialogue">
 NO NO NO NO NO NO
 I’LL NEVER LEAVE
 YOU CAN’T MAKE ME
 THE WORLD IS SCARY 
 SO SCARY FOR SUCH A SMALL FRIEND
 WITHOUT ME YOU ARE NOTHING
+</span>
 
 [[“You don’t know that for sure.” | Scene 14: The Monster dies]]
 [[Choice 2: “I have to try.” | Scene 14: The Monster dies]]
@@ -212,12 +216,13 @@ WITHOUT ME YOU ARE NOTHING
 :: Scene 14: The Monster dies
 
 The wind roars outside, hard enough to rattle the windows. But you aren’t afraid. Behind you, the shape trembles like a leaf, and you have a feeling that it isn’t just shaking with fury anymore. It seems so much smaller than it was before. Its voice, once so powerful and commanding, sounds miserable and tiny.
-
+<span class = "dialogue">
 STOP
 PLEASE
 PLEASE PLEASE PLEASE PLEASE
 I’M SO HUNGRY
 AND YOU’RE SO ALONE
+</span>
 
 
 [[“You don’t control me.” | Scene 15: TRUE END]]
