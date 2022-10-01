@@ -257,9 +257,9 @@ You sit with your back against the log and wait for help to come. The rain conti
 [[Give up|Scene 9.5]]
 
 :: Scene 9.5
-You're tired of waiting. The rain keeps pouring down. You're cold and hurt and tired.
+The rain keeps pouring down. You're cold and hurt and tired.
 
-You don/'t want to do this anymore. 
+You don’t want to do this anymore. 
 
 [[NORMAL END | Scene 3: Run (BRANCH SPLIT)]]
 <<set $ending_2_key to true>>
@@ -273,7 +273,7 @@ You tried running. You tried hiding. Somehow you already know this. But there’
 
 The voice crackles through your ears like static. Something is behind you, and even though you can’t hear it moving, you know it’s looming over you, close enough for you to realize that it has a mouth.
 
-''WHAT DO YOU WANT TO PLAY NEXT''
+<span class = "dialogue">''WHAT DO YOU WANT TO PLAY NEXT''</span>
 
 [["\"I don’t want to play with you.\"" | Scene 11: Stand your ground]]
 <<audio "see_monster" stop>>
@@ -281,10 +281,6 @@ The voice crackles through your ears like static. Something is behind you, and e
 
 :: Scene 11: Stand your ground
 The static in your head falters for a moment. You get the sense that it’s taken aback, even though  everything else about it is beyond your understanding.
-
-FINE
-NO MORE GAMES NO MORE RUNNING NO MORE HIDING
-IT'S JUST US NOW
 
 <span class = "dialogue">''FINE''
 
@@ -369,7 +365,7 @@ The wind roars outside, hard enough to rattle the windows. But you aren’t afra
 [["\"But not anymore.\""|Scene 15e]]
 
 :: Scene 15e
-"This time, I’m fighting back.""
+"This time, I’m fighting back."
 
 TRUE END
 
