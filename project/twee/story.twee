@@ -93,7 +93,7 @@ BAD END
 <<set $ending_1_key to true>>
 <<audio "see_monster" stop>>
 <<set $currently_playing to false>>
-<<if $currently_playing is false>><<audio "game_over_1" loop play>><<set $currently_playing to true>><</if>>
+<<if $currently_playing is false>><<audio "game_over_1" loop play volume 0.40>><<set $currently_playing to true>><</if>>
 
 :: Scene 5b (The Closet)
 You enter the hallway between your bedroom and the living room, running past the grandfather clock. You don’t hear it ticking anymore, as if time itself has stopped moving.
@@ -108,7 +108,7 @@ BAD END
 <<set $ending_1_key to true>>
 <<audio "see_monster" stop>>
 <<set $currently_playing to false>>
-<<if $currently_playing is false>><<audio "game_over_1" loop play>><<set $currently_playing to true>><</if>>
+<<if $currently_playing is false>><<audio "game_over_1" loop play volume 0.40>><<set $currently_playing to true>><</if>>
 
 :: Scene 5c (Under the bed)
 You enter the hallway between your bedroom and the living room, running past the grandfather clock. You don’t hear it ticking anymore, as if time itself has stopped moving.
@@ -123,7 +123,7 @@ BAD END
 <<set $ending_1_key to true>>
 <<audio "see_monster" stop>>
 <<set $currently_playing to false>>
-<<if $currently_playing is false>><<audio "game_over_1" loop play>><<set $currently_playing to true>><</if>>
+<<if $currently_playing is false>><<audio "game_over_1" loop play volume 0.40>><<set $currently_playing to true>><</if>>
 
 :: Scene 6: Run Outside
 You have a feeling that you wouldn’t get very hard if you tried to hide. So you decide to run. 
