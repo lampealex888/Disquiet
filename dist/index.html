@@ -111,18 +111,27 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 &lt;&lt;cacheaudio &quot;true_end&quot; &quot;assets/true end.mp3&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Start" tags="" position="225,100" size="100,100">Welcome to our Game Jam 2022 submission
 [[Start Game | Scene 1: In your house]]
 &lt;&lt;audio &quot;true_end&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Scene 1: In your house" tags="" position="350,100" size="100,100">It&#39;s 8:00 PM on a Friday night. You are alone. None of this is very surprising.
+
 It feels like you&#39;re always alone these days. Looking for something to do, you decide to catch up on all the homework you have piling up.
+
 Since you have the house to yourself for the night, you decide to work in the living room. Glancing up from your computer, you take a look around.
+
 A cartoon is playing on the TV across from the couch where you are sitting.You can hear the soft ticking of an old grandfather clock between your bedroom and the living room, patiently counting down the hour.
+
 Behind the couch is a window. Sheets of rain spatter the glass as a storm rages outside. It started an hour ago and it shows no signs of stopping. 
+
 That&#39;s when you hear it.
-&lt;!-- TODO: ADD SFX MONSTER NOISE also go give jadyn a kiss --&gt;
-[[What is that?|Scene 1.5]]</tw-passagedata><tw-passagedata pid="4" name="Scene 1a: Look out the window" tags="" position="475,100" size="100,100">You sit up on your knees to get a better look outside. It&#39;s pitch black. Through the rain, you can barely make out the shape of the trees that surround your property.
+
+[[What is that?|Scene 1.5]]
+&lt;!-- TODO: ADD SFX MONSTER NOISE also go give jadyn a kiss --&gt;</tw-passagedata><tw-passagedata pid="4" name="Scene 1a: Look out the window" tags="" position="475,100" size="100,100">You sit up on your knees to get a better look outside. It&#39;s pitch black. Through the rain, you can barely make out the shape of the trees that surround your property.
+
 This far out from the city, you can usually see the stars. But tonight, you&#39;re lucky that you can even see porch lights from the farm house sat across from you, little yellow dots flickering in the dark.
+
 There&#39;s no one there. 
 
 [[You don&#39;t see anything outside|Scene 1: In your house]]
 &lt;&lt;set $scene_1a_key to true&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Scene 1b: Ignore the sound" tags="" position="600,100" size="100,100">It&#39;s an old house. Don&#39;t those always make weird sounds at night? It&#39;s practically a given that some things will go bump in the night. 
+
 It must have been the wind. 
 
 [[You ignore the sound|Scene 1: In your house]]
@@ -132,24 +141,38 @@ You lie back on the couch and close your eyes.
 Six hours pass.
 
 [[You go to sleep|Scene 1: In your house]]</tw-passagedata><tw-passagedata pid="7" name="Scene 1.5" tags="" position="850,100" size="100,100">You don&#39;t hear anything but the TV and the rain and- 
+
 &#39;&#39;FRIEND&#39;&#39;
+
 There&#39;s something else. Not just the storm, but something quiter, like a voice in the back of your head that won&#39;t go away.
+
 &#39;&#39;FRIEND LET ME IN&#39;&#39;
+
 You can&#39;t quite begin to describe it, but it sounds familiar. 
+
 What should you do?
+
 &lt;&lt;if $scene_1a_key isnot true&gt;&gt;[[Look out the window|Scene 1a: Look out the window]]&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $scene_1b_key isnot true&gt;&gt;[[Ignore it|Scene 1b: Ignore the sound]]&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $scene_1a_key is true and $scene_1b_key is true&gt;&gt;[[Go to sleep|Scene 2: You wake up]]&lt;&lt;/if&gt;&gt;
 &lt;&lt;audio &quot;true_end&quot; stop&gt;&gt;
 &lt;&lt;set $currently_playing to false&gt;&gt;
 &lt;&lt;if $currently_playing is false&gt;&gt;&lt;&lt;audio &quot;intro&quot; loop play&gt;&gt;&lt;&lt;set $currently_playing to true&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Scene 2: You wake up" tags="" position="975,100" size="100,100">The clock chimes. It is now 2:00 AM.
+
 It&#39;s still raining outside, but that isn&#39;t what wakes you up.
+
 &#39;&#39;FRIEND&#39;&#39;
+
 It&#39;s dark when you open your eyes. You try to make out the TV in the living room to gain some perspective but you are met with nothing but stillness. 
+
 At some point in the night the power must have gone out, plunging the house into complete darkness. You can barely make out anything in front of you.
+
 Including the incomprehensible shape hovering directly over you. 
+
 &#39;&#39;HELLO FRIEND&#39;&#39;
+
 &#39;&#39;DID YOU MISS ME&#39;&#39;
+
 [[Run|Scene 3: Run (BRANCH SPLIT)]]
 &lt;&lt;if $scene_2b_key isnot true&gt;&gt;[[Freeze|Scene 2b Freeze]]&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $scene_2c_key isnot true&gt;&gt;[[Shut your eyes|Scene 2c Shut your eyes]]&lt;&lt;/if&gt;&gt;
@@ -158,18 +181,25 @@ Including the incomprehensible shape hovering directly over you.
 &lt;&lt;set $currently_playing to false&gt;&gt;
 &lt;&lt;if $currently_playing is false&gt;&gt;&lt;&lt;audio &quot;see_monster&quot; loop play volume 0.60&gt;&gt;&lt;&lt;set $currently_playing to true&gt;&gt;&lt;&lt;/if&gt;&gt;
 &lt;!-- Alex please add monster SFX noise here and give me a kiss  --&gt;</tw-passagedata><tw-passagedata pid="9" name="Scene 2b Freeze" tags="" position="1100,100" size="100,100">You freeze like a cornered animal. Every muscle in your body locks up as the shape drifts closer like a black cloud, close enough to touch the tip of your nose. 
+
 &#39;&#39;DIDN’T I TELL YOU I’D BE BACK&#39;&#39;
 &#39;&#39;I TOLD YOU&#39;&#39;
 &#39;&#39;I TOLD YOU&#39;&#39;
 &#39;&#39;I TOLD YOU&#39;&#39;
 &#39;&#39;I’LL NEVER LEAVE YOU&#39;&#39;
+
 Each word is like a stake through your temples and a knife in your heart. Your breath sticks in your throat; trying to suck in a breath as the knife just twists in deeper.
+
 [[Go back|Scene 2: You wake up]]
 &lt;&lt;set $scene_2b_key to true&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="Scene 2c Shut your eyes" tags="" position="1225,100" size="100,100">&#39;&#39;I CAN STILL SEE YOU&#39;&#39;
+
 It isn&#39;t quite a voice, but you hear it bouncing around inside your head all the same, throbbing against the walls of your skull like a migraine.
+
 [[Go back|Scene 2: You wake up]]
 &lt;&lt;set $scene_2c_key to true&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="Scene 3: Run (BRANCH SPLIT)" tags="" position="100,225" size="100,100">You regain control of your body and roll off the couch, hitting the ground with a thud. Crawling forward, you scramble to your feet, trying not to slide on the floor as you run.
+
 Your only choice is obvious.
+
 [[Hide|Scene 4: Hide]]
 &lt;&lt;if $ending_1_key is true&gt;&gt;[[Run outside|Scene 6: Run Outside]]&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $ending_1_key is true and $ending_2_key is true&gt;&gt;[[Stand your ground|Scene 10: Stand your ground]]&lt;&lt;/if&gt;&gt;
@@ -178,37 +208,53 @@ Your only choice is obvious.
 &lt;&lt;audio &quot;game_over_1&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;game_over_2&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;see_monster&quot; loop play&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="Scene 4: Hide" tags="" position="225,225" size="100,100">This is your house. You know it better than anyone and where the best places are to hide.
+
 Choose a hiding spot
+
 [[Basement|Scene 5a: The Basement]]
 [[The closet|Scene 5b (The Closet)]]
 [[Under the bed|Scene 5c (Under the bed)]]</tw-passagedata><tw-passagedata pid="13" name="Scene 5a: The Basement" tags="" position="350,225" size="100,100">You run into the kitchen, blindly groping around for the walls, a chair, anything to help you as you feel your way to the corner of the room. Your hand hits the handle of the door to the basement, and you yank it open so fast you feel like you could tear the hinges off.
+
 Not that you could tear it off, of course. You’re not that strong, and certainly not strong enough to fight back, are you?
+
 You shut the door behind you and go downstairs, two steps at a time. There’s only one window in the cellar and it’s tiny, about the size and width of a shoebox. Not even close to being big enough for you to fit through. A flash of lightning illuminates the musty-smelling room where you can see piles of newspapers, old sports equipment, and boxes filled with toys you haven’t looked at since you were a child.
+
 You beeline for the spot tucked behind the stairs, conceal yourself behind a box of old clothes, and listen.
+
 You can hear something moving around upstairs. The floorboards creak softly, stop, and start again. They stop one more time.
+
 Very slowly, the door to the cellar creaks open, so quiet you can only hear it when you hold your breath. You can still hear it over the hammer of your heartbeat, drowning out the world. 
 
 &#39;&#39;FRIEND&#39;&#39; &lt;!-- TODO: Make the text very glitchy --&gt;
+
 &#39;&#39;I FOUND YOU&#39;&#39;
 
 [[BAD END|Scene 3: Run (BRANCH SPLIT)]]
 &lt;&lt;set $ending_1_key to true&gt;&gt;
 &lt;&lt;audio &quot;see_monster&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;game_over_1&quot; loop play volume 0.40&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="Scene 5b (The Closet)" tags="" position="475,225" size="100,100">You enter the hallway between your bedroom and the living room, running past the grandfather clock. You don’t hear it ticking anymore, as if time itself has stopped moving.
+
 The room to your door is already open. Good. It won’t be able to tell you’re in here.
+
 You shut yourself in your closet, hide under a pile of laundry, and listen.
+
 You can hear something crawling across the floor, moving so stealthily you might miss the sound entirely compared to the ragged breathing coming from your throat. The scant light from under the door goes out.
 
 &#39;&#39;DON’T SCREAM FRIEND DON’T CRY FRIEND DON’T FIGHT FRIEND&#39;&#39; &lt;!-- TODO: make text glitchy --&gt;
+
 &#39;&#39;I WILL ALWAYS BE HERE&#39;&#39;
 
 [[BAD END|Scene 3: Run (BRANCH SPLIT)]]
 &lt;&lt;set $ending_1_key to true&gt;&gt;
 &lt;&lt;audio &quot;see_monster&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;game_over_1&quot; loop play volume 0.40&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="Scene 5c (Under the bed)" tags="" position="600,225" size="100,100">You enter the hallway between your bedroom and the living room, running past the grandfather clock. You don’t hear it ticking anymore, as if time itself has stopped moving.
+
 The room to your door is already open. Good. It won’t be able to tell you’re in here.
+
 You crawl under your bed, tuck your arms and legs in, and shut your eyes.
+
 Two seconds pass, then three. Then ten. Twenty. You start to breathe again.
+
 Then you hear the bed springs squeak above your head. 
 
 &#39;&#39;YOU CANNOT HIDE FRIEND&#39;&#39; &lt;!-- TODO: make text glitchy --&gt;
@@ -219,6 +265,7 @@ Then you hear the bed springs squeak above your head.
 &lt;&lt;audio &quot;game_over_1&quot; loop play volume 0.40&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Scene 6: Run Outside" tags="" position="725,225" size="100,100">You have a feeling that you wouldn’t get very far if you tried to hide. So you decide to [[run| Scene 7 ]].
 &lt;&lt;audio &quot;see_monster&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;run&quot; loop play volume 0.40&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="Scene 7" tags="" position="850,225" size="100,100">Your neighbors run a farm, but they aren’t home. In between you and your neighbor&#39;s house is a vast cornfield that stretches out far past the limits of your combined properties. The stalks rustle in the rain and wind. The fallen corn husks crunch and crinkle under your feet as you stand at the edge of the field. 
+
 Behind you, a voice howls with the wind, furious.
 
 &#39;&#39;DON’T RUN FROM ME FRIEND&#39;&#39;
@@ -233,18 +280,20 @@ Behind you, a voice howls with the wind, furious.
 [[Crawl | Scene 8]]
 &lt;&lt;audio &quot;run&quot; stop&gt;&gt;
 &lt;&lt;audio &quot;cornfield&quot; loop play&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="Scene 8" tags="" position="1225,225" size="100,100">Finally, your body stops tumbling and you come to a stop at the foot of the hill. You crawl through the mud, pulling yourself along by your arms. The ground squishes under your fingers as you dig them into the sludge. You keep going until you feel solid earth and the sturdy body of a log blocking your path.
+
 Pulling yourself up, you slump against the log. Your legs feel like they’re being stabbed by broken glass and your back hurts. You’re in no shape to walk, nor do you want to. All you want to do, really, is lie there.
 
 [[Wait | Scene 9 (NORMAL END)]]</tw-passagedata><tw-passagedata pid="21" name="Scene 9 (NORMAL END)" tags="" position="100,350" size="100,100">You sit with your back against the log and wait for help to come. The rain continues to fall.
-You keep waiting.
-You keep waiting.
-You keep waiting.
-&lt;em&gt;You never stop waiting.&lt;/em&gt;
+
+[[Wait|Scene 9 (NORMAL END)]]
+[[Give up|Scene 9.5]]</tw-passagedata><tw-passagedata pid="22" name="Scene 9.5" tags="" position="225,350" size="100,100">You&#39;re tired of waiting. The rain keeps pouring down. You&#39;re cold and hurt and tired.
+
+You don&#39;t want to do this anymore. 
 
 [[NORMAL END | Scene 3: Run (BRANCH SPLIT)]]
 &lt;&lt;set $ending_2_key to true&gt;&gt;
 &lt;&lt;audio &quot;cornfield&quot; stop&gt;&gt;
-&lt;&lt;audio &quot;game_over_2&quot; loop play&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="Scene 10: Stand your ground" tags="" position="225,350" size="100,100">You tried running. You tried hiding. Somehow you already know this. But there’s still one thing you haven’t tried. One last option.
+&lt;&lt;audio &quot;game_over_2&quot; loop play&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="Scene 10: Stand your ground" tags="" position="350,350" size="100,100">You tried running. You tried hiding. Somehow you already know this. But there’s still one thing you haven’t tried. One last option.
 
 &#39;&#39;FRIEND&#39;&#39;
 
@@ -252,53 +301,69 @@ The voice crackles through your ears like static. Something is behind you, and e
 
 &#39;&#39;WHAT DO YOU WANT TO PLAY NEXT&#39;&#39;
 
-[[“I don’t want to play with you.” | Scene 11: Stand your ground]]
+[[&#39;I don’t want to play with you.&#39; | Scene 11: Stand your ground]]
 &lt;&lt;audio &quot;see_monster&quot; stop&gt;&gt;
-&lt;&lt;audio &quot;confront&quot; loop play&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="Scene 11: Stand your ground" tags="" position="350,350" size="100,100">The static in your head falters for a moment. You get the sense that it’s taken aback, even though  everything else about it is beyond your understanding.
+&lt;&lt;audio &quot;confront&quot; loop play&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="Scene 11: Stand your ground" tags="" position="475,350" size="100,100">The static in your head falters for a moment. You get the sense that it’s taken aback, even though  everything else about it is beyond your understanding.
 
-FINE
-NO MORE GAMES NO MORE RUNNING NO MORE HIDING
-IT&#39;S JUST US NOW
+&#39;&#39;FINE&#39;&#39;
 
-[[&quot;&#39;You&#39;re not real.&#39;&quot;|Scene 12: The Monster fights back]]
-[[&quot;&#39;Get out.&#39;&quot;| Scene 12: The Monster fights back]]</tw-passagedata><tw-passagedata pid="24" name="Scene 12: The Monster fights back" tags="" position="475,350" size="100,100">The not-so-distant rumble of thunder outside your house reminds you that the storm hasn’t stopped. If anything, it’s getting worse. Displeased, the voice in your head shakes in anger.
+&#39;&#39;NO MORE GAMES NO MORE RUNNING NO MORE HIDING&#39;&#39;
 
-NO
-NO NO NO
-BAD FRIEND VERY BAD
-WHO DO YOU THINK YOU’RE TALKING TO
+&#39;&#39;IT&#39;S JUST US NOW&#39;&#39;
 
-[[“Nothing worth my time.”  | Scene 13: The Monster weakens]]
-[[“I’m not afraid of you.” | Scene 13: The Monster weakens]]
-[[“Shut up.” | Scene 13: The Monster weakens]]</tw-passagedata><tw-passagedata pid="25" name="Scene 13: The Monster weakens" tags="" position="600,350" size="100,100">Now you know why the voice sounds so familiar. You’ve heard it many times before, always tucked away in the back of your head with all your most private thoughts and fears. It keeps coming back because it’s stubborn and hungry and it never gives up.
+[[&quot;&#39;I’m sick of you!&#39;&quot;|Scene 12: The Monster fights back]]
+[[&quot;&#39;Get out.&#39;&quot;| Scene 12: The Monster fights back]]</tw-passagedata><tw-passagedata pid="25" name="Scene 12: The Monster fights back" tags="" position="600,350" size="100,100">The not-so-distant rumble of thunder outside your house reminds you that the storm hasn’t stopped. If anything, it’s getting worse. Displeased, the voice in your head shakes in anger.
 
-NO NO NO NO NO NO
-I’LL NEVER LEAVE
-YOU CAN’T MAKE ME
-THE WORLD IS SCARY 
-SO SCARY FOR SUCH A SMALL FRIEND
-WITHOUT ME YOU ARE NOTHING
+&#39;&#39;NO&#39;&#39;
 
-[[“You don’t know that for sure.” | Scene 14: The Monster dies]]
-[[“I have to try.” | Scene 14: The Monster dies]]
-[[“I’m not alone.” | Scene 14: The Monster dies]]</tw-passagedata><tw-passagedata pid="26" name="Scene 14: The Monster dies" tags="" position="725,350" size="100,100">The wind roars outside, hard enough to rattle the windows. But you aren’t afraid. Behind you, the shape trembles like a leaf, and you have a feeling that it isn’t just shaking with fury anymore. It seems so much smaller than it was before. Its voice, once so powerful and commanding, sounds miserable and tiny.
+&#39;&#39;NO NO NO&#39;&#39;
 
-STOP
-PLEASE
-PLEASE PLEASE PLEASE PLEASE
-I’M SO HUNGRY
-AND YOU’RE SO ALONE
+&#39;&#39;BAD FRIEND VERY BAD&#39;&#39;
 
+&#39;&#39;WHO DO YOU THINK YOU’RE TALKING TO&#39;&#39;
 
-[[“You don’t control me.” | Scene 15: TRUE END]]
-[[“You always lie.” | Scene 15: TRUE END]]
-[[“I told you, I’m not alone.” | Scene 15: TRUE END]]</tw-passagedata><tw-passagedata pid="27" name="Scene 15: TRUE END" tags="" position="850,350" size="100,100">[[“I’m never alone.”|Scene 15b]]
-[[“It won’t end this way.”|Scene 15b]]
-[[“There’s always another option.”|Scene 15b]]
+[[&#39;Nothing worth my time.&#39;  | Scene 13: The Monster weakens]]
+[[&#39;I’m not afraid of you.&#39; | Scene 13: The Monster weakens]]
+[[&#39;Shut up.&#39; | Scene 13: The Monster weakens]]</tw-passagedata><tw-passagedata pid="26" name="Scene 13: The Monster weakens" tags="" position="725,350" size="100,100">Now you know why the voice sounds so familiar. You’ve heard it many times before, always tucked away in the back of your head with all your most private thoughts and fears. It keeps coming back because it’s stubborn and hungry and it never gives up.
+
+&#39;&#39;NO NO NO NO NO NO&#39;&#39;
+
+&#39;&#39;I’LL NEVER LEAVE&#39;&#39;
+
+&#39;&#39;YOU CAN’T MAKE ME&#39;&#39;
+
+&#39;&#39;THE WORLD IS SCARY&#39;&#39;
+
+&#39;&#39;SO SCARY FOR SUCH A SMALL FRIEND&#39;&#39;
+
+&#39;&#39;WITHOUT ME YOU ARE NOTHING&#39;&#39;
+
+[[&#39;You don’t know that for sure.&#39; | Scene 14: The Monster dies]]
+[[&#39;I have to try.&#39; | Scene 14: The Monster dies]]
+[[&#39;I’m not alone.&#39; | Scene 14: The Monster dies]]</tw-passagedata><tw-passagedata pid="27" name="Scene 14: The Monster dies" tags="" position="850,350" size="100,100">The wind roars outside, hard enough to rattle the windows. But you aren’t afraid. Behind you, the shape trembles like a leaf, and you have a feeling that it isn’t just shaking with fury anymore. It seems so much smaller than it was before. Its voice, once so powerful and commanding, sounds miserable and tiny.
+
+&#39;&#39;STOP&#39;&#39;
+
+&#39;&#39;PLEASE&#39;&#39;
+
+&#39;&#39;PLEASE PLEASE PLEASE PLEASE&#39;&#39;
+
+&#39;&#39;I’M SO HUNGRY&#39;&#39;
+
+&#39;&#39;AND YOU’RE SO ALONE&#39;&#39;
+
+[[&#39;You don’t control me.&#39; | Scene 15: TRUE END]]
+[[&#39;You always lie.&#39; | Scene 15: TRUE END]]
+[[&#39;I told you, I’m not alone.&#39; | Scene 15: TRUE END]]</tw-passagedata><tw-passagedata pid="28" name="Scene 15: TRUE END" tags="" position="975,350" size="100,100">[[&#39;I’m never alone.&#39;|Scene 15b]]
+[[&#39;It won’t end this way.&#39;|Scene 15b]]
+[[&#39;There’s always another option.&#39;|Scene 15b]]
 &lt;&lt;audio &quot;confront&quot; stop&gt;&gt;
-&lt;&lt;audio &quot;true_end&quot; loop play&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="Scene 15b" tags="" position="975,350" size="100,100">[[“I am capable of so much more than you think I am. I’m stronger than you are.”|Scene 15c]]
-[[“I might not be able to believe it right now, but that doesn’t mean it isn’t true. I just have to be patient with myself.”|Scene 15c]]
-[[“There’s always a chance to change and do better. To be better. To keep going.”|Scene 15c]]</tw-passagedata><tw-passagedata pid="29" name="Scene 15c" tags="" position="1100,350" size="100,100">[[“You’re here because I fed you. I let you grow. I hid from you.  I ran from you.”|Scene 15d]]</tw-passagedata><tw-passagedata pid="30" name="Scene 15d" tags="" position="1225,350" size="100,100">[[&quot;But not anymore.&quot;|Scene 15e]]</tw-passagedata><tw-passagedata pid="31" name="Scene 15e" tags="" position="100,475" size="100,100">[[&quot;This time, I’m fighting back.&quot;|Scene 16: End credits]]</tw-passagedata><tw-passagedata pid="32" name="Scene 16: End credits" tags="" position="225,475" size="100,100">The end
+&lt;&lt;audio &quot;true_end&quot; loop play&gt;&gt;</tw-passagedata><tw-passagedata pid="29" name="Scene 15b" tags="" position="1100,350" size="100,100">[[&#39;I am capable of so much more than you think I am. I’m stronger than you are.&#39;|Scene 15c]]
+[[&#39;I might not be able to believe it right now, but that doesn’t mean it isn’t true. I just have to be patient with myself.&#39;|Scene 15c]]
+[[&#39;There’s always a chance to change and do better. To be better. To keep going.&#39;|Scene 15c]]</tw-passagedata><tw-passagedata pid="30" name="Scene 15c" tags="" position="1225,350" size="100,100">[[&#39;You’re here because I fed you. I let you grow. I hid from you.  I ran from you.&#39;|Scene 15d]]</tw-passagedata><tw-passagedata pid="31" name="Scene 15d" tags="" position="100,475" size="100,100">[[&quot;&#39;But not anymore.&#39;&quot;|Scene 15e]]</tw-passagedata><tw-passagedata pid="32" name="Scene 15e" tags="" position="225,475" size="100,100">&#39;This time, I’m fighting back.&#39;
+
+TRUE END
+
 [[Play again?|Scene 1: In your house]]
 [[Main menu|Start]]</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">

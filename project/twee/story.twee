@@ -18,17 +18,25 @@ Welcome to our Game Jam 2022 submission
 
 :: Scene 1: In your house
 It's 8:00 PM on a Friday night. You are alone. None of this is very surprising.
+
 It feels like you're always alone these days. Looking for something to do, you decide to catch up on all the homework you have piling up.
+
 Since you have the house to yourself for the night, you decide to work in the living room. Glancing up from your computer, you take a look around.
+
 A cartoon is playing on the TV across from the couch where you are sitting.You can hear the soft ticking of an old grandfather clock between your bedroom and the living room, patiently counting down the hour.
+
 Behind the couch is a window. Sheets of rain spatter the glass as a storm rages outside. It started an hour ago and it shows no signs of stopping. 
+
 That's when you hear it.
-<!-- TODO: ADD SFX MONSTER NOISE also go give jadyn a kiss -->
+
 [[What is that?|Scene 1.5]]
+<!-- TODO: ADD SFX MONSTER NOISE also go give jadyn a kiss -->
 
 :: Scene 1a: Look out the window
 You sit up on your knees to get a better look outside. It's pitch black. Through the rain, you can barely make out the shape of the trees that surround your property.
+
 This far out from the city, you can usually see the stars. But tonight, you're lucky that you can even see porch lights from the farm house sat across from you, little yellow dots flickering in the dark.
+
 There's no one there. 
 
 [[You don't see anything outside|Scene 1: In your house]]
@@ -36,6 +44,7 @@ There's no one there.
 
 :: Scene 1b: Ignore the sound
 It's an old house. Don't those always make weird sounds at night? It's practically a given that some things will go bump in the night. 
+
 It must have been the wind. 
 
 [[You ignore the sound|Scene 1: In your house]]
@@ -59,6 +68,7 @@ There's something else. Not just the storm, but something quiter, like a voice i
 ''FRIEND LET ME IN''
 
 You can't quite begin to describe it, but it sounds familiar. 
+
 What should you do?
 
 <<if $scene_1a_key isnot true>>[[Look out the window|Scene 1a: Look out the window]]<</if>>
@@ -70,15 +80,19 @@ What should you do?
 
 :: Scene 2: You wake up
 The clock chimes. It is now 2:00 AM.
+
 It's still raining outside, but that isn't what wakes you up.
 
 ''FRIEND''
 
 It's dark when you open your eyes. You try to make out the TV in the living room to gain some perspective but you are met with nothing but stillness. 
+
 At some point in the night the power must have gone out, plunging the house into complete darkness. You can barely make out anything in front of you.
+
 Including the incomprehensible shape hovering directly over you. 
 
 ''HELLO FRIEND''
+
 ''DID YOU MISS ME''
 
 [[Run|Scene 3: Run (BRANCH SPLIT)]]
@@ -115,6 +129,7 @@ It isn't quite a voice, but you hear it bouncing around inside your head all the
 
 :: Scene 3: Run (BRANCH SPLIT)
 You regain control of your body and roll off the couch, hitting the ground with a thud. Crawling forward, you scramble to your feet, trying not to slide on the floor as you run.
+
 Your only choice is obvious.
 
 [[Hide|Scene 4: Hide]]
@@ -137,13 +152,19 @@ Choose a hiding spot
 
 :: Scene 5a: The Basement
 You run into the kitchen, blindly groping around for the walls, a chair, anything to help you as you feel your way to the corner of the room. Your hand hits the handle of the door to the basement, and you yank it open so fast you feel like you could tear the hinges off.
+
 Not that you could tear it off, of course. You’re not that strong, and certainly not strong enough to fight back, are you?
+
 You shut the door behind you and go downstairs, two steps at a time. There’s only one window in the cellar and it’s tiny, about the size and width of a shoebox. Not even close to being big enough for you to fit through. A flash of lightning illuminates the musty-smelling room where you can see piles of newspapers, old sports equipment, and boxes filled with toys you haven’t looked at since you were a child.
+
 You beeline for the spot tucked behind the stairs, conceal yourself behind a box of old clothes, and listen.
+
 You can hear something moving around upstairs. The floorboards creak softly, stop, and start again. They stop one more time.
+
 Very slowly, the door to the cellar creaks open, so quiet you can only hear it when you hold your breath. You can still hear it over the hammer of your heartbeat, drowning out the world. 
 
 ''FRIEND'' <!-- TODO: Make the text very glitchy -->
+
 ''I FOUND YOU''
 
 [[BAD END|Scene 3: Run (BRANCH SPLIT)]]
@@ -153,11 +174,15 @@ Very slowly, the door to the cellar creaks open, so quiet you can only hear it w
 
 :: Scene 5b (The Closet)
 You enter the hallway between your bedroom and the living room, running past the grandfather clock. You don’t hear it ticking anymore, as if time itself has stopped moving.
+
 The room to your door is already open. Good. It won’t be able to tell you’re in here.
+
 You shut yourself in your closet, hide under a pile of laundry, and listen.
+
 You can hear something crawling across the floor, moving so stealthily you might miss the sound entirely compared to the ragged breathing coming from your throat. The scant light from under the door goes out.
 
 ''DON’T SCREAM FRIEND DON’T CRY FRIEND DON’T FIGHT FRIEND'' <!-- TODO: make text glitchy -->
+
 ''I WILL ALWAYS BE HERE''
 
 [[BAD END|Scene 3: Run (BRANCH SPLIT)]]
@@ -167,9 +192,13 @@ You can hear something crawling across the floor, moving so stealthily you might
 
 :: Scene 5c (Under the bed)
 You enter the hallway between your bedroom and the living room, running past the grandfather clock. You don’t hear it ticking anymore, as if time itself has stopped moving.
+
 The room to your door is already open. Good. It won’t be able to tell you’re in here.
+
 You crawl under your bed, tuck your arms and legs in, and shut your eyes.
+
 Two seconds pass, then three. Then ten. Twenty. You start to breathe again.
+
 Then you hear the bed springs squeak above your head. 
 
 ''YOU CANNOT HIDE FRIEND'' <!-- TODO: make text glitchy -->
@@ -186,6 +215,7 @@ You have a feeling that you wouldn’t get very far if you tried to hide. So you
 
 :: Scene 7
 Your neighbors run a farm, but they aren’t home. In between you and your neighbor's house is a vast cornfield that stretches out far past the limits of your combined properties. The stalks rustle in the rain and wind. The fallen corn husks crunch and crinkle under your feet as you stand at the edge of the field. 
+
 Behind you, a voice howls with the wind, furious.
 
 ''DON’T RUN FROM ME FRIEND''
@@ -209,16 +239,21 @@ You take the leftmost path that leads around the side of the house instead. The 
 
 :: Scene 8 
 Finally, your body stops tumbling and you come to a stop at the foot of the hill. You crawl through the mud, pulling yourself along by your arms. The ground squishes under your fingers as you dig them into the sludge. You keep going until you feel solid earth and the sturdy body of a log blocking your path.
+
 Pulling yourself up, you slump against the log. Your legs feel like they’re being stabbed by broken glass and your back hurts. You’re in no shape to walk, nor do you want to. All you want to do, really, is lie there.
 
 [[Wait | Scene 9 (NORMAL END)]]
 
 :: Scene 9 (NORMAL END)
 You sit with your back against the log and wait for help to come. The rain continues to fall.
-You keep waiting.
-You keep waiting.
-You keep waiting.
-<em>You never stop waiting.</em>
+
+[[Wait|Scene 9 (NORMAL END)]]
+[[Give up|Scene 9.5]]
+
+:: Scene 9.5
+You're tired of waiting. The rain keeps pouring down. You're cold and hurt and tired.
+
+You don't want to do this anymore. 
 
 [[NORMAL END | Scene 3: Run (BRANCH SPLIT)]]
 <<set $ending_2_key to true>>
@@ -242,7 +277,9 @@ The voice crackles through your ears like static. Something is behind you, and e
 The static in your head falters for a moment. You get the sense that it’s taken aback, even though  everything else about it is beyond your understanding.
 
 ''FINE''
+
 ''NO MORE GAMES NO MORE RUNNING NO MORE HIDING''
+
 ''IT'S JUST US NOW''
 
 [["'I’m sick of you!'"|Scene 12: The Monster fights back]]
@@ -253,8 +290,11 @@ The static in your head falters for a moment. You get the sense that it’s take
 The not-so-distant rumble of thunder outside your house reminds you that the storm hasn’t stopped. If anything, it’s getting worse. Displeased, the voice in your head shakes in anger.
 
 ''NO''
+
 ''NO NO NO''
+
 ''BAD FRIEND VERY BAD''
+
 ''WHO DO YOU THINK YOU’RE TALKING TO''
 
 [['Nothing worth my time.'  | Scene 13: The Monster weakens]]
@@ -267,28 +307,34 @@ The not-so-distant rumble of thunder outside your house reminds you that the sto
 Now you know why the voice sounds so familiar. You’ve heard it many times before, always tucked away in the back of your head with all your most private thoughts and fears. It keeps coming back because it’s stubborn and hungry and it never gives up.
 
 ''NO NO NO NO NO NO''
+
 ''I’LL NEVER LEAVE''
+
 ''YOU CAN’T MAKE ME''
-''THE WORLD IS SCARY ''
+
+''THE WORLD IS SCARY''
+
 ''SO SCARY FOR SUCH A SMALL FRIEND''
+
 ''WITHOUT ME YOU ARE NOTHING''
 
 [['You don’t know that for sure.' | Scene 14: The Monster dies]]
 [['I have to try.' | Scene 14: The Monster dies]]
 [['I’m not alone.' | Scene 14: The Monster dies]]
 
-
-
 :: Scene 14: The Monster dies
 
 The wind roars outside, hard enough to rattle the windows. But you aren’t afraid. Behind you, the shape trembles like a leaf, and you have a feeling that it isn’t just shaking with fury anymore. It seems so much smaller than it was before. Its voice, once so powerful and commanding, sounds miserable and tiny.
 
 ''STOP''
-''PLEASE''
-''PLEASE PLEASE PLEASE PLEASE''
-''I’M SO HUNGRY''
-''AND YOU’RE SO ALONE''
 
+''PLEASE''
+
+''PLEASE PLEASE PLEASE PLEASE''
+
+''I’M SO HUNGRY''
+
+''AND YOU’RE SO ALONE''
 
 [['You don’t control me.' | Scene 15: TRUE END]]
 [['You always lie.' | Scene 15: TRUE END]]
