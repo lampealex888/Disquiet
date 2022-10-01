@@ -10,6 +10,7 @@ Disquiet
 <<cacheaudio "game_over_2" "assets/Game Over (no.2).mp3">>
 <<cacheaudio "confront" "assets/Confront.mp3">>
 <<cacheaudio "true_end" "assets/true end.mp3">>
+<<cacheaudio "monster_noise" "assets/Monster 1.mp3">>
 
 :: Start
 Welcome to our Game Jam 2022 submission
@@ -28,9 +29,12 @@ A cartoon is playing on the TV across from the couch where you are sitting.You c
 Behind the couch is a window. Sheets of rain spatter the glass as a storm rages outside. It started an hour ago and it shows no signs of stopping. 
 
 That's when you hear it.
+<<set $currently_playing to false>>
+<<if $currently_playing is false>><<audio "intro" loop play>><<set $currently_playing to true>><</if>>
 
 [[What is that?|Scene 1.5]]
-<!-- TODO: ADD SFX MONSTER NOISE also go give jadyn a kiss -->
+<<set $currently_playing to false>>
+<<if $currently_playing is false>><<audio "monster_noise" play>><<set $currently_playing to true>><</if>>
 
 :: Scene 1a: Look out the window
 You sit up on your knees to get a better look outside. It's pitch black. Through the rain, you can barely make out the shape of the trees that surround your property.
@@ -82,6 +86,7 @@ What should you do?
 The clock chimes. It is now 2:00 AM.
 
 It's still raining outside, but that isn't what wakes you up.
+
 <span class = "dialogue">''FRIEND''</span>
 
 It's dark when you open your eyes. At some point in the night the power must have gone out, plunging the house into complete darkness. You can barely make out anything in front of you.
@@ -165,9 +170,8 @@ You can hear something moving around upstairs. The floorboards creak softly, sto
 Very slowly, the door to the cellar creaks open, so quiet you can only hear it when you hold your breath. You can still hear it over the hammer of your heartbeat, drowning out the world. 
 
 <span class = "dialogue">''FRIEND''
-I FOUND YOU</span>
 
-''I FOUND YOU''
+''I FOUND YOU''</span>
 
 [[BAD END|Scene 3: Run (BRANCH SPLIT)]]
 <<set $ending_1_key to true>>
@@ -255,7 +259,7 @@ You sit with your back against the log and wait for help to come. The rain conti
 :: Scene 9.5
 You're tired of waiting. The rain keeps pouring down. You're cold and hurt and tired.
 
-You don't want to do this anymore. 
+You don/'t want to do this anymore. 
 
 [[NORMAL END | Scene 3: Run (BRANCH SPLIT)]]
 <<set $ending_2_key to true>>
