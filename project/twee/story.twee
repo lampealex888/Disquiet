@@ -65,11 +65,11 @@ Six hours pass.
 :: Scene 1.5
 You don't hear anything but the TV and the rain and- 
 
-''FRIEND''
+<span class = "dialogue">''FRIEND''</span>
 
 There's something else. Not just the storm, but something quiter, like a voice in the back of your head that won't go away.
 
-''FRIEND LET ME IN''
+<span class = "dialogue">''FRIEND LET ME IN''</span>
 
 You can't quite begin to describe it, but it sounds familiar. 
 
@@ -91,9 +91,9 @@ It's still raining outside, but that isn't what wakes you up.
 
 It's dark when you open your eyes. At some point in the night the power must have gone out, plunging the house into complete darkness. You can barely make out anything in front of you.
 
-<span class = "dialogue">''HELLO FRIEND''
+<span class = "dialogue">''HELLO FRIEND''</span>
 
-''DID YOU MISS ME''</span>
+<span class = "dialogue">''DID YOU MISS ME''</span>
 
 Including the incomprehensible shape hovering directly over the couch.
 
