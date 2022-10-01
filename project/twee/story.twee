@@ -31,7 +31,7 @@ What do you do?
 :: Scene 2: Nightmare awakes you
 The clock chimes. It is now 2:00 AM.
 It's still raining outside, but that isn't what wakes you up.
-FRIEND
+<span style="color:red">FRIEND</span>
 It's dark when you open your eyes. At some point in the night the power must have gone out, plunging the house into complete darkness. You can barely make out anything in front of you.
 HELLO FRIEND
 DID YOU MISS ME
