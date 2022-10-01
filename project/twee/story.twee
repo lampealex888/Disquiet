@@ -269,7 +269,7 @@ The voice crackles through your ears like static. Something is behind you, and e
 
 ''WHAT DO YOU WANT TO PLAY NEXT''
 
-[['I don’t want to play with you.' | Scene 11: Stand your ground]]
+[["\"I don’t want to play with you.\"" | Scene 11: Stand your ground]]
 <<audio "see_monster" stop>>
 <<audio "confront" loop play>>
 
@@ -282,8 +282,8 @@ The static in your head falters for a moment. You get the sense that it’s take
 
 ''IT'S JUST US NOW''
 
-[["'I’m sick of you!'"|Scene 12: The Monster fights back]]
-[["'Get out.'"| Scene 12: The Monster fights back]]
+[["\"I’m sick of you!\"" |Scene 12: The Monster fights back]]
+[["\"Get out.\"" | Scene 12: The Monster fights back]]
 
 
 :: Scene 12: The Monster fights back
@@ -297,9 +297,9 @@ The not-so-distant rumble of thunder outside your house reminds you that the sto
 
 ''WHO DO YOU THINK YOU’RE TALKING TO''
 
-[['Nothing worth my time.'  | Scene 13: The Monster weakens]]
-[['I’m not afraid of you.' | Scene 13: The Monster weakens]]
-[['Shut up.' | Scene 13: The Monster weakens]]
+[["\"Nothing worth my time.\"" | Scene 13: The Monster weakens]]
+[["\"I’m not afraid of you.\"" | Scene 13: The Monster weakens]]
+[["\"Shut up.\"" | Scene 13: The Monster weakens]]
 
 
 :: Scene 13: The Monster weakens
@@ -318,9 +318,9 @@ Now you know why the voice sounds so familiar. You’ve heard it many times befo
 
 ''WITHOUT ME YOU ARE NOTHING''
 
-[['You don’t know that for sure.' | Scene 14: The Monster dies]]
-[['I have to try.' | Scene 14: The Monster dies]]
-[['I’m not alone.' | Scene 14: The Monster dies]]
+[["\"You don’t know that for sure.\"" | Scene 14: The Monster dies]]
+[["\"I have to try.\"" | Scene 14: The Monster dies]]
+[["\"I’m not alone.\"" | Scene 14: The Monster dies]]
 
 :: Scene 14: The Monster dies
 
@@ -336,30 +336,30 @@ The wind roars outside, hard enough to rattle the windows. But you aren’t afra
 
 ''AND YOU’RE SO ALONE''
 
-[['You don’t control me.' | Scene 15: TRUE END]]
-[['You always lie.' | Scene 15: TRUE END]]
-[['I told you, I’m not alone.' | Scene 15: TRUE END]]
+[["\"You don’t control me.\"" | Scene 15: TRUE END]]
+[["\"You always lie.\"" | Scene 15: TRUE END]]
+[["\"I told you, I’m not alone.\"" | Scene 15: TRUE END]]
 
 :: Scene 15: TRUE END
-[['I’m never alone.'|Scene 15b]]
-[['It won’t end this way.'|Scene 15b]]
-[['There’s always another option.'|Scene 15b]]
+[["\"I’m never alone.\""|Scene 15b]]
+[["\"It won’t end this way.\""|Scene 15b]]
+[["\"There’s always another option.\""|Scene 15b]]
 <<audio "confront" stop>>
 <<audio "true_end" loop play>>
 
 :: Scene 15b
-[['I am capable of so much more than you think I am. I’m stronger than you are.'|Scene 15c]]
-[['I might not be able to believe it right now, but that doesn’t mean it isn’t true. I just have to be patient with myself.'|Scene 15c]]
-[['There’s always a chance to change and do better. To be better. To keep going.'|Scene 15c]]
+[["\"I am capable of so much more than you think I am. I’m stronger than you are.\""|Scene 15c]]
+[["\"I might not be able to believe it right now, but that doesn’t mean it isn’t true. I just have to be patient with myself.\""|Scene 15c]]
+[["\"There’s always a chance to change and do better. To be better. To keep going.\""|Scene 15c]]
 
 :: Scene 15c
-[['You’re here because I fed you. I let you grow. I hid from you.  I ran from you.'|Scene 15d]]
+[["\"You’re here because I fed you. I let you grow. I hid from you.  I ran from you.\""|Scene 15d]]
 
 :: Scene 15d
-[["'But not anymore.'"|Scene 15e]]
+[["\"But not anymore.\""|Scene 15e]]
 
 :: Scene 15e
-'This time, I’m fighting back.'
+"This time, I’m fighting back.""
 
 TRUE END
 
