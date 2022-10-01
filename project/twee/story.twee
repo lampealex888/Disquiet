@@ -11,54 +11,79 @@ Welcome to our Game Jam 2022 submission
 [[Start Game | Scene 1: In your house]]
 
 :: Scene 1: In your house
-You’re in your house late at night doing homework
-You start hearing strange noises 
-What do you do?
-<<if $scene_1a_key isnot true>>[[Investigate the sound|Scene 1a: Investigate the sound]]<</if>>
+It's 8:00 PM on a Friday night. You are alone. None of this is very surprising.
+It feels like you're always alone these days. Looking for something to do, you decide to catch up on all the homework you have piling up.
+Since you have the house to yourself for the night, you decide to work in the living room. Glancing up from your computer, you take a look around.
+A cartoon is playing on the TV across from the couch where you are sitting.You can hear the soft ticking of an old grandfather clock between your bedroom and the living room, patiently counting down the hour.
+Behind the couch is a window. Sheets of rain spatter the glass as a storm rages outside. It started an hour ago and it shows no signs of stopping. 
+That's when you hear it.
+<!-- TODO: ADD SFX MONSTER NOISE also go give jadyn a kiss -->
+What is that? 
+You don't hear anything but the TV and the rain and- 
+''FRIEND''
+There's something else. Not just the storm, but something quiter, like a voice in the back of your head that won't go away.
+''FRIEND LET ME IN''
+You can't quite begin to describe it, but it sounds familiar. 
+What should you do?
+<<if $scene_1a_key isnot true>>[[Look out the window|Scene 1a: Look out the window]]<</if>>
 <<if $scene_1b_key isnot true>>[[Ignore it|Scene 1b: Ignore the sound]]<</if>>
-<<if $scene_1a_key is true and $scene_1b_key is true>>[[Try to go to sleep|Scene 2: Nightmare awakes you]]<</if>>
+<<if $scene_1a_key is true and $scene_1b_key is true>>[[Go to sleep|Scene 2: You wake up]]<</if>>
 <<set $currently_playing to false>>
 <<if $currently_playing is false>><<audio "intro" loop play>><<set $currently_playing to true>><</if>>
 
-:: Scene 1a: Investigate the sound
-[[Can’t find anything in the house|Scene 1: In your house]]
+:: Scene 1a: Look out the window
+[[You don't see anything outside|Scene 1: In your house]]
+You sit up on your knees to get a better look outside. It's pitch black. Through the rain, you can barely make out the shape of the trees that surround your property.
+This far out from the city, you can usually see the stars. But tonight, you're lucky that you can even see porch lights from the farm house sat across from you, little yellow dots flickering in the dark.
+There's no one there. 
 <<set $scene_1a_key to true>>
 
 :: Scene 1b: Ignore the sound
-[[The sound becomes louder|Scene 1: In your house]]
+[[You ignore the sound|Scene 1: In your house]]
+It's an old house. Don't those always make weird sounds at night? It's practically a given that some things will go bump in the night. 
+It must have been the wind. 
 <<set $scene_1b_key to true>>
 
-:: Scene 2: Nightmare awakes you
+:: Scene 1c: Go to sleep 
+[[You go to sleep|Scene 1: In your house]]
+You can only stare at the same formulas and word problems for so long. You close your laptop and decide to take a nap. 
+Just a short one. You even set an alarm on your phone for an hour, just to prove that you mean business. 
+You lie back on the couch and close your eyes. 
+Six hours pass.
+
+:: Scene 2: You wake up
 The clock chimes. It is now 2:00 AM.
 It's still raining outside, but that isn't what wakes you up.
-FRIEND
-It's dark when you open your eyes. At some point in the night the power must have gone out, plunging the house into complete darkness. You can barely make out anything in front of you.
-HELLO FRIEND
-DID YOU MISS ME
-Including the incomprehensible shape  hovering directly over the couch.
+''FRIEND'''
+It's dark when you open your eyes. You try to make out the TV in the living room to gain some perspective but you are met with nothing but stillness. 
+At some point in the night the power must have gone out, plunging the house into complete darkness. You can barely make out anything in front of you.
+<!-- Alex please add monster SFX noise here and give me a kiss  -->
+Including the incomprehensible shape hovering directly over you. 
+''HELLO FRIEND''
+''DID YOU MISS ME''
 [[Run|Scene 3: Run (BRANCH SPLIT)]]
 <<if $scene_2b_key isnot true>>[[Freeze|Scene 2b Freeze]]<</if>>
 <<if $scene_2c_key isnot true>>[[Shut your eyes|Scene 2c Shut your eyes]]<</if>>
-<<if $ending_1_key is true and $ending_2_key is true>>[[Answer it|Scene 10]]<</if>>
+<<if $ending_1_key is true and $ending_2_key is true>>[[Stand your ground|Scene 10]]<</if>>
 <<audio "intro" stop>>
 <<set $currently_playing to false>>
 <<if $currently_playing is false>><<audio "see_monster" loop play>><<set $currently_playing to true>><</if>>
 
 :: Scene 2b Freeze
 You freeze like a cornered animal. Every muscle in your body locks up as the shape drifts closer like a black cloud, close enough to touch the tip of your nose. 
-DIDN’T I TELL YOU I’D BE BACK
-I TOLD YOU
-I TOLD YOU
-I TOLD YOU
-I’LL NEVER LEAVE YOU
-Each word is like a stake through your temples and a knife in your heart. Your breath sticks in your throat; trying to catch it just twists the knife further.
-[[Go back|Scene 2: Nightmare awakes you]]
+''DIDN’T I TELL YOU I’D BE BACK''
+''I TOLD YOU''
+''I TOLD YOU''
+''I TOLD YOU''
+''I’LL NEVER LEAVE YOU''
+Each word is like a stake through your temples and a knife in your heart. Your breath sticks in your throat; trying to suck in a breath as the knife just twists in deeper.
+[[Go back|Scene 2: You wake up]]
 <<set $scene_2b_key to true>>
 
 :: Scene 2c Shut your eyes
-I CAN STILL SEE YOU
-It isn't quite a voice, but it's something you hear in the back of your head all the same, throbbing against the walls of your skull like a migraine.
-[[Go back|Scene 2: Nightmare awakes you]]
+''I CAN STILL SEE YOU''
+It isn't quite a voice, but you hear it bouncing around inside your head all the same, throbbing against the walls of your skull like a migraine.
+[[Go back|Scene 2: You wake up]]
 <<set $scene_2c_key to true>>
 
 :: Scene 3: Run (BRANCH SPLIT)
@@ -79,14 +104,14 @@ Choose a hiding spot
 [[Under the bed|Scene 5c (Under the bed)]]
 
 :: Scene 5a: The Basement
-You run into the kitchen, blindly groping around for the walls, a chair, anything to help you as you feel your way to the corner of the room. Your hand hits the handle of the door to the cellar, and you yank it open so fast you feel like you could tear the hinges off.
+You run into the kitchen, blindly groping around for the walls, a chair, anything to help you as you feel your way to the corner of the room. Your hand hits the handle of the door to the basement, and you yank it open so fast you feel like you could tear the hinges off.
 Not that you could tear it off, of course. You’re not that strong, and certainly not strong enough to fight back, are you?
 You shut the door behind you and go downstairs, two steps at a time. There’s only one window in the cellar and it’s tiny, about the size and width of a shoebox. Not even close to being big enough for you to fit through. A flash of lightning illuminates the musty-smelling room where you can see piles of newspapers, old sports equipment, and boxes filled with toys you haven’t looked at since you were a child.
 You beeline for the spot tucked behind the stairs, conceal yourself behind a box of old clothes, and listen.
 You can hear something moving around upstairs. The floorboards creak softly, stop, and start again. They stop one more time.
 Very slowly, the door to the cellar creaks open, so quiet you can only hear it when you hold your breath. You can still hear it over the hammer of your heartbeat, drowning out the world. 
-FRIEND
-I FOUND YOU
+''FRIEND''
+''I FOUND YOU''
 
 BAD END
 [[Go back|Scene 3: Run (BRANCH SPLIT)]]
@@ -100,8 +125,8 @@ You enter the hallway between your bedroom and the living room, running past the
 The room to your door is already open. Good. It won’t be able to tell you’re in here.
 You shut yourself in your closet, hide under a pile of laundry, and listen.
 You can hear something crawling across the floor, moving so stealthily you might miss the sound entirely compared to the ragged breathing coming from your throat. The scant light from under the door goes out.
- DON’T SCREAM FRIEND DON’T CRY FRIEND DON’T FIGHT FRIEND
-I WILL ALWAYS BE HERE
+''DON’T SCREAM FRIEND DON’T CRY FRIEND DON’T FIGHT FRIEND''
+''I WILL ALWAYS BE HERE''
 
 BAD END
 [[Go back|Scene 3: Run (BRANCH SPLIT)]]
@@ -116,7 +141,7 @@ The room to your door is already open. Good. It won’t be able to tell you’re
 You crawl under your bed, tuck your arms and legs in, and shut your eyes.
 Two seconds pass, then three. Then ten. Twenty. You start to breathe again.
 Then you hear the bed springs squeak above your head. 
-YOU CANNOT HIDE FRIEND
+''YOU CANNOT HIDE FRIEND''
 
 BAD END
 [[Go back|Scene 3: Run (BRANCH SPLIT)]]
