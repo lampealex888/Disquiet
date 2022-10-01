@@ -51,11 +51,16 @@ Six hours pass.
 
 :: Scene 1.5
 You don't hear anything but the TV and the rain and- 
+
 ''FRIEND''
+
 There's something else. Not just the storm, but something quiter, like a voice in the back of your head that won't go away.
+
 ''FRIEND LET ME IN''
+
 You can't quite begin to describe it, but it sounds familiar. 
 What should you do?
+
 <<if $scene_1a_key isnot true>>[[Look out the window|Scene 1a: Look out the window]]<</if>>
 <<if $scene_1b_key isnot true>>[[Ignore it|Scene 1b: Ignore the sound]]<</if>>
 <<if $scene_1a_key is true and $scene_1b_key is true>>[[Go to sleep|Scene 2: You wake up]]<</if>>
@@ -66,12 +71,16 @@ What should you do?
 :: Scene 2: You wake up
 The clock chimes. It is now 2:00 AM.
 It's still raining outside, but that isn't what wakes you up.
+
 ''FRIEND''
+
 It's dark when you open your eyes. You try to make out the TV in the living room to gain some perspective but you are met with nothing but stillness. 
 At some point in the night the power must have gone out, plunging the house into complete darkness. You can barely make out anything in front of you.
 Including the incomprehensible shape hovering directly over you. 
+
 ''HELLO FRIEND''
 ''DID YOU MISS ME''
+
 [[Run|Scene 3: Run (BRANCH SPLIT)]]
 <<if $scene_2b_key isnot true>>[[Freeze|Scene 2b Freeze]]<</if>>
 <<if $scene_2c_key isnot true>>[[Shut your eyes|Scene 2c Shut your eyes]]<</if>>
@@ -83,24 +92,31 @@ Including the incomprehensible shape hovering directly over you.
 
 :: Scene 2b Freeze
 You freeze like a cornered animal. Every muscle in your body locks up as the shape drifts closer like a black cloud, close enough to touch the tip of your nose. 
+
 ''DIDN’T I TELL YOU I’D BE BACK''
 ''I TOLD YOU''
 ''I TOLD YOU''
 ''I TOLD YOU''
 ''I’LL NEVER LEAVE YOU''
+
 Each word is like a stake through your temples and a knife in your heart. Your breath sticks in your throat; trying to suck in a breath as the knife just twists in deeper.
+
 [[Go back|Scene 2: You wake up]]
 <<set $scene_2b_key to true>>
 
 :: Scene 2c Shut your eyes
+
 ''I CAN STILL SEE YOU''
+
 It isn't quite a voice, but you hear it bouncing around inside your head all the same, throbbing against the walls of your skull like a migraine.
+
 [[Go back|Scene 2: You wake up]]
 <<set $scene_2c_key to true>>
 
 :: Scene 3: Run (BRANCH SPLIT)
 You regain control of your body and roll off the couch, hitting the ground with a thud. Crawling forward, you scramble to your feet, trying not to slide on the floor as you run.
 Your only choice is obvious.
+
 [[Hide|Scene 4: Hide]]
 <<if $ending_1_key is true>>[[Run outside|Scene 6: Run Outside]]<</if>>
 <<if $ending_1_key is true and $ending_2_key is true>>[[Stand your ground|Scene 10: Stand your ground]]<</if>>
@@ -112,7 +128,9 @@ Your only choice is obvious.
 
 :: Scene 4: Hide
 This is your house. You know it better than anyone and where the best places are to hide.
+
 Choose a hiding spot
+
 [[Basement|Scene 5a: The Basement]]
 [[The closet|Scene 5b (The Closet)]]
 [[Under the bed|Scene 5c (Under the bed)]]
@@ -216,7 +234,7 @@ The voice crackles through your ears like static. Something is behind you, and e
 
 ''WHAT DO YOU WANT TO PLAY NEXT''
 
-[[“'I don’t want to play with you.'” | Scene 11: Stand your ground]]
+[['I don’t want to play with you.' | Scene 11: Stand your ground]]
 <<audio "see_monster" stop>>
 <<audio "confront" loop play>>
 
@@ -239,9 +257,9 @@ The not-so-distant rumble of thunder outside your house reminds you that the sto
 ''BAD FRIEND VERY BAD''
 ''WHO DO YOU THINK YOU’RE TALKING TO''
 
-[[“'Nothing worth my time.'”  | Scene 13: The Monster weakens]]
-[[“'I’m not afraid of you.'” | Scene 13: The Monster weakens]]
-[[“'Shut up.'” | Scene 13: The Monster weakens]]
+[['Nothing worth my time.'  | Scene 13: The Monster weakens]]
+[['I’m not afraid of you.' | Scene 13: The Monster weakens]]
+[['Shut up.' | Scene 13: The Monster weakens]]
 
 
 :: Scene 13: The Monster weakens
@@ -255,9 +273,9 @@ Now you know why the voice sounds so familiar. You’ve heard it many times befo
 ''SO SCARY FOR SUCH A SMALL FRIEND''
 ''WITHOUT ME YOU ARE NOTHING''
 
-[[“'You don’t know that for sure.'” | Scene 14: The Monster dies]]
-[[“'I have to try.'” | Scene 14: The Monster dies]]
-[[“'I’m not alone.'” | Scene 14: The Monster dies]]
+[['You don’t know that for sure.' | Scene 14: The Monster dies]]
+[['I have to try.' | Scene 14: The Monster dies]]
+[['I’m not alone.' | Scene 14: The Monster dies]]
 
 
 
@@ -272,30 +290,30 @@ The wind roars outside, hard enough to rattle the windows. But you aren’t afra
 ''AND YOU’RE SO ALONE''
 
 
-[[“'You don’t control me.'” | Scene 15: TRUE END]]
-[[“'You always lie.'” | Scene 15: TRUE END]]
-[[“'I told you, I’m not alone.'” | Scene 15: TRUE END]]
+[['You don’t control me.' | Scene 15: TRUE END]]
+[['You always lie.' | Scene 15: TRUE END]]
+[['I told you, I’m not alone.' | Scene 15: TRUE END]]
 
 :: Scene 15: TRUE END
-[[“'I’m never alone.'”|Scene 15b]]
-[[“'It won’t end this way.'”|Scene 15b]]
-[[“'There’s always another option.'”|Scene 15b]]
+[['I’m never alone.'|Scene 15b]]
+[['It won’t end this way.'|Scene 15b]]
+[['There’s always another option.'|Scene 15b]]
 <<audio "confront" stop>>
 <<audio "true_end" loop play>>
 
 :: Scene 15b
-[[“'I am capable of so much more than you think I am. I’m stronger than you are.'”|Scene 15c]]
-[[“'I might not be able to believe it right now, but that doesn’t mean it isn’t true. I just have to be patient with myself.'”|Scene 15c]]
-[[“'There’s always a chance to change and do better. To be better. To keep going.'”|Scene 15c]]
+[['I am capable of so much more than you think I am. I’m stronger than you are.'|Scene 15c]]
+[['I might not be able to believe it right now, but that doesn’t mean it isn’t true. I just have to be patient with myself.'|Scene 15c]]
+[['There’s always a chance to change and do better. To be better. To keep going.'|Scene 15c]]
 
 :: Scene 15c
-[[“'You’re here because I fed you. I let you grow. I hid from you.  I ran from you.'”|Scene 15d]]
+[['You’re here because I fed you. I let you grow. I hid from you.  I ran from you.'|Scene 15d]]
 
 :: Scene 15d
 [["'But not anymore.'"|Scene 15e]]
 
 :: Scene 15e
-'[["'This time, I’m fighting back.'"]]
+'This time, I’m fighting back.'
 
 TRUE END
 
