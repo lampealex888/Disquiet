@@ -11,14 +11,45 @@ You start hearing strange noises
 What do you do?
 [[Investigate the sound|Scene 1.1: Investigate the sound]]
 [[Ignore it|Scene 1.2: Ignore the sound]]
-<!-- unlocked after visiting scene 1.1 and 1.2 -->
-[[Try to go to sleep|Scene 2: Nightmare awakes you]] 
-(if: $key1 is true and $key2 is true and $key3 is true)[[[Try to go to sleep|Scene 2: Nightmare awakes you]]]
+<<if $scene_1_1_key is true and $scene_1_2_key is true>>[[Try to go to sleep|Scene 2: Nightmare awakes you]]<</if>> <!-- unlocked after visiting scene 1.1 and 1.2 -->
 
 :: Scene 1.1: Investigate the sound
+<<set $scene_1_1_key to true>>
 [[Can’t find anything in the house|Scene 1: In your house]]
 
 :: Scene 1.2: Ignore the sound
+<<set $scene_1_2_key to true>>
 [[The sound becomes louder|Scene 1: In your house]]
 
 :: Scene 2: Nightmare awakes you
+The clock chimes. It is now 2:00 AM.
+It's still raining outside, but that isn't what wakes you up.
+FRIEND
+It's dark when you open your eyes. At some point in the night the power must have gone out, plunging the house into complete darkness. You can barely make out anything in front of you.
+HELLO FRIEND
+DID YOU MISS ME
+Including the incomprehensible shape  hovering directly over the couch.
+[[Option 1: Run|Scene 3: Run (BRANCH SPLIT)]]
+<<if $scene_2_2_key isnot true>>[[Freeze|Scene 2.2 Freeze]]<<else>>Locked<</if>>
+<<if $scene_2_3_key isnot true>>[[Shut your eyes|Scene 2.3 Shut your eyes]]<<else>>Locked<</if>>
+<<if $ending_1_key is true and $ending_2_key is true>>[[Option 4 (unlocked after endings #1 and #2): Answer it (WIP)]]<<else>>Locked<</if>>
+
+:: Scene 2.2 Freeze
+<<set $scene_2_2_key to true>>
+You freeze like a cornered animal. Every muscle in your body locks up as the shape drifts closer like a black cloud, close enough to touch the tip of your nose. 
+DIDN’T I TELL YOU I’D BE BACK
+I TOLD YOU
+I TOLD YOU
+I TOLD YOU
+I’LL NEVER LEAVE YOU
+Each word is like a stake through your temples and a knife in your heart. Your breath sticks in your throat; trying to catch it just twists the knife further.
+[[Go back|Scene 2: Nightmare awakes you]]
+
+:: Scene 2.3 Shut your eyes
+<<set $scene_2_3_key to true>>
+I CAN STILL SEE YOU
+It isn't quite a voice, but it's something you hear in the back of your head all the same, throbbing against the walls of your skull like a migraine.
+[[Go back|Scene 2: Nightmare awakes you]]
+
+:: Scene 3: Run (BRANCH SPLIT)
+WIP
