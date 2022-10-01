@@ -9,16 +9,16 @@ Tweego Basic Setup
 You’re in your house late at night doing homework
 You start hearing strange noises 
 What do you do?
-[[Investigate the sound|Scene 1.1: Investigate the sound]]
-[[Ignore it|Scene 1.2: Ignore the sound]]
-<<if $scene_1_1_key is true and $scene_1_2_key is true>>[[Try to go to sleep|Scene 2: Nightmare awakes you]]<</if>> <!-- unlocked after visiting scene 1.1 and 1.2 -->
+[[Investigate the sound|Scene 1a: Investigate the sound]]
+[[Ignore it|Scene 1b: Ignore the sound]]
+<<if $scene_1a_key is true and $scene_1b_key is true>>[[Try to go to sleep|Scene 2: Nightmare awakes you]]<</if>> <!-- unlocked after visiting scene 1a and 1b -->
 
-:: Scene 1.1: Investigate the sound
-<<set $scene_1_1_key to true>>
+:: Scene 1a: Investigate the sound
+<<set $scene_1a_key to true>>
 [[Can’t find anything in the house|Scene 1: In your house]]
 
-:: Scene 1.2: Ignore the sound
-<<set $scene_1_2_key to true>>
+:: Scene 1b: Ignore the sound
+<<set $scene_1b_key to true>>
 [[The sound becomes louder|Scene 1: In your house]]
 
 :: Scene 2: Nightmare awakes you
@@ -29,13 +29,13 @@ It's dark when you open your eyes. At some point in the night the power must hav
 HELLO FRIEND
 DID YOU MISS ME
 Including the incomprehensible shape  hovering directly over the couch.
-[[Option 1: Run|Scene 3: Run (BRANCH SPLIT)]]
-<<if $scene_2_2_key isnot true>>[[Freeze|Scene 2.2 Freeze]]<<else>>Locked<</if>>
-<<if $scene_2_3_key isnot true>>[[Shut your eyes|Scene 2.3 Shut your eyes]]<<else>>Locked<</if>>
-<<if $ending_1_key is true and $ending_2_key is true>>[[Option 4 (unlocked after endings #1 and #2): Answer it (WIP)]]<<else>>Locked<</if>>
+[[Run|Scene 3: Run (BRANCH SPLIT)]]
+<<if $scene_2b_key isnot true>>[[Freeze|Scene 2b Freeze]]<</if>>
+<<if $scene_2c_key isnot true>>[[Shut your eyes|Scene 2c Shut your eyes]]<</if>>
+<<if $ending_1_key is true and $ending_2_key is true>>[[Answer it|Scene 10]]<</if>>
 
-:: Scene 2.2 Freeze
-<<set $scene_2_2_key to true>>
+:: Scene 2b Freeze
+<<set $scene_2b_key to true>>
 You freeze like a cornered animal. Every muscle in your body locks up as the shape drifts closer like a black cloud, close enough to touch the tip of your nose. 
 DIDN’T I TELL YOU I’D BE BACK
 I TOLD YOU
@@ -45,11 +45,64 @@ I’LL NEVER LEAVE YOU
 Each word is like a stake through your temples and a knife in your heart. Your breath sticks in your throat; trying to catch it just twists the knife further.
 [[Go back|Scene 2: Nightmare awakes you]]
 
-:: Scene 2.3 Shut your eyes
-<<set $scene_2_3_key to true>>
+:: Scene 2c Shut your eyes
+<<set $scene_2c_key to true>>
 I CAN STILL SEE YOU
 It isn't quite a voice, but it's something you hear in the back of your head all the same, throbbing against the walls of your skull like a migraine.
 [[Go back|Scene 2: Nightmare awakes you]]
 
 :: Scene 3: Run (BRANCH SPLIT)
-WIP
+You regain control of your body and roll off the couch, hitting the ground with a thud. Crawling forward, you scramble to your feet, trying not to slide on the floor as you run.
+Your only choice is obvious.
+[[Hide|Scene 4: Hide]]
+<<if $ending_1_key is true>>[[Run Outside|Scene 6: Run outside]]<</if>>
+<<if $ending_1_key is true and $ending_2_key is true>>[[Stand your ground|Scene 10: Stand your ground]]<</if>>
+
+:: Scene 4: Hide
+This is your house. You know it better than anyone and where the best places are to hide.
+Choose a hiding spot
+[[Basement|Scene 5a: The Basement]]
+[[The Closet|Scene 5b (The Closet)]]
+[[Under the bed|Scene 5c (Under the bed)]]
+
+:: Scene 5a: The Basement
+You run into the kitchen, blindly groping around for the walls, a chair, anything to help you as you feel your way to the corner of the room. Your hand hits the handle of the door to the cellar, and you yank it open so fast you feel like you could tear the hinges off.
+Not that you could tear it off, of course. You’re not that strong, and certainly not strong enough to fight back, are you?
+You shut the door behind you and go downstairs, two steps at a time. There’s only one window in the cellar and it’s tiny, about the size and width of a shoebox. Not even close to being big enough for you to fit through. A flash of lightning illuminates the musty-smelling room where you can see piles of newspapers, old sports equipment, and boxes filled with toys you haven’t looked at since you were a child.
+You beeline for the spot tucked behind the stairs, conceal yourself behind a box of old clothes, and listen.
+You can hear something moving around upstairs. The floorboards creak softly, stop, and start again. They stop one more time.
+Very slowly, the door to the cellar creaks open, so quiet you can only hear it when you hold your breath. You can still hear it over the hammer of your heartbeat, drowning out the world. 
+FRIEND
+I FOUND YOU
+
+BAD END
+<<set $ending_1_key to true>>
+[[Go back|Scene 3: Run (BRANCH SPLIT)]]
+
+:: Scene 5b (The Closet)
+You enter the hallway between your bedroom and the living room, running past the grandfather clock. You don’t hear it ticking anymore, as if time itself has stopped moving.
+The room to your door is already open. Good. It won’t be able to tell you’re in here.
+You shut yourself in your closet, hide under a pile of laundry, and listen.
+You can hear something crawling across the floor, moving so stealthily you might miss the sound entirely compared to the ragged breathing coming from your throat. The scant light from under the door goes out.
+ DON’T SCREAM FRIEND DON’T CRY FRIEND DON’T FIGHT FRIEND
+I WILL ALWAYS BE HERE
+
+BAD END
+<<set $ending_1_key to true>>
+[[Go back|Scene 3: Run (BRANCH SPLIT)]]
+
+:: Scene 5c (Under the bed)
+You enter the hallway between your bedroom and the living room, running past the grandfather clock. You don’t hear it ticking anymore, as if time itself has stopped moving.
+The room to your door is already open. Good. It won’t be able to tell you’re in here.
+You crawl under your bed, tuck your arms and legs in, and shut your eyes.
+Two seconds pass, then three. Then ten. Twenty. You start to breathe again.
+Then you hear the bed springs squeak above your head. 
+YOU CANNOT HIDE FRIEND
+
+BAD END
+<<set $ending_1_key to true>>
+[[Go back|Scene 3: Run (BRANCH SPLIT)]]
+
+:: Scene 6: Run Outside
+You have a feeling that you wouldn’t get very hard if you tried to hide. So you decide to run. 
+Prompt: Run across the street
