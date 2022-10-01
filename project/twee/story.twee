@@ -65,7 +65,7 @@ It isn't quite a voice, but it's something you hear in the back of your head all
 You regain control of your body and roll off the couch, hitting the ground with a thud. Crawling forward, you scramble to your feet, trying not to slide on the floor as you run.
 Your only choice is obvious.
 [[Hide|Scene 4: Hide]]
-<<if $ending_1_key is true>>[[Run Outside|Scene 6: Run outside]]<</if>>
+<<if $ending_1_key is true>>[[Run Outside|Scene 6: Run Outside]]<</if>>
 <<if $ending_1_key is true and $ending_2_key is true>>[[Stand your ground|Scene 10: Stand your ground]]<</if>>
 <<audio "game_over_1" stop>>
 <<set $currently_playing to false>>
@@ -126,5 +126,102 @@ BAD END
 <<if $currently_playing is false>><<audio "game_over_1" loop play volume 0.40>><<set $currently_playing to true>><</if>>
 
 :: Scene 6: Run Outside
-You have a feeling that you wouldn’t get very hard if you tried to hide. So you decide to run. 
-Prompt: Run across the street
+You have a feeling that you wouldn’t get very hard if you tried to hide. So you decide to [[run. | Scene 7 ]]
+
+
+:: Scene 7
+Your neighbors run a farm, but they aren’t home. In between you and your neighbor's house is a vast cornfield that stretches out far past the limits of your combined properties. The stalks rustle in the rain and wind. The fallen corn husks crunch and crinkle under your feet as you stand at the edge of the field. 
+Behind you, a voice howls with the wind, furious.
+DON’T RUN FROM ME FRIEND
+
+[[ Run deeper into the cornfield | 7a  ]]
+[[Run to the side of the house | 7b ]]
+
+:: 7a
+You plunge into the cornfield. The tall stalks smack your face as you run and frantically push past them. You can hear the monster tearing at the cornstalks just behind you. You know that it is not far behind. Your outstretched hand breaks free of the field as your foot slips in the wet mud, and you slide uncontrollably down the unseen hill at the edge of the field. The only thing you see is mud and rain as you tumble over yourself down the steep hill.
+[[Crawl | Scene 8]]
+
+:: 7b
+You take the leftmost path that leads around the side of the house instead. The rain hits your face, making it impossible to see clearly. The porch lights are blurry in your eyes; Suddenly, you go from seeing nothing to seeing too much. Your feet get tangled up, and before you can do anything to stop your momentum, you find yourself tripping and sliding through the mud down a long hill.
+[[Crawl | Scene 8]]
+
+:: Scene 8 
+Finally, your body stops tumbling and you come to a stop at the foot of the hill. You crawl through the mud, pulling yourself along by your arms. The ground squishes under your fingers as you dig them into the sludge. You keep going until you feel solid earth and the sturdy body of a log blocking your path.
+Pulling yourself up, you slump against the log. Your legs feel like they’re being stabbed by broken glass and your back hurts. You’re in no shape to walk, nor do you want to. All you want to do, really, is lay there.
+[[Wait | Scene 9 (NORMAL END)]]
+
+:: Scene 9 (NORMAL END)
+You sit with your back against the log and wait for help to come. The rain continues to fall.
+You keep waiting.
+You keep waiting.
+You keep waiting.
+You never stop waiting.
+
+[[NORMAL END | Scene 3: Run (BRANCH SPLIT)]]
+
+
+:: Scene 10: Stand your ground
+You tried running. You tried hiding. Somehow you already know this. But there’s still one thing you haven’t tried. One last option.
+FRIEND
+The voice crackles through your ears like static. Something is behind you, and even though you can’t hear it moving, you know it’s looming over you, close enough for you to realize that it has a mouth.
+WHAT DO YOU WANT TO PLAY NEXT
+
+[[“I don’t want to play with you.” | Scene 11: Stand your ground]]
+
+:: Scene 11: Stand your ground
+The static in your head falters for a moment. You get the sense that it’s taken aback, even though  everything else about it is beyond your understanding.
+
+FINE
+NO MORE GAMES NO MORE RUNNING NO MORE HIDING
+IT'S JUST US NOW
+
+[["You're not real." | Scene 12: The Monster fights back]]
+[["Get out." | Scene 12: The Monster fights back]]
+
+
+:: Scene 12: The Monster fights back
+The not-so-distant rumble of thunder outside your house reminds you that the storm hasn’t stopped. If anything, it’s getting worse. Displeased, the voice in your head shakes in anger.
+
+NO
+NO NO NO
+BAD FRIEND VERY BAD
+WHO DO YOU THINK YOU’RE TALKING TO
+
+[[“Nothing worth my time.”  | Scene 13: The Monster weakens]]
+[[“I’m not afraid of you.” | Scene 13: The Monster weakens]]
+[[“Shut up.” | Scene 13: The Monster weakens]]
+
+
+:: Scene 13: The Monster weakens
+
+Now you know why the voice sounds so familiar. You’ve heard it many times before, always tucked away in the back of your head with all your most private thoughts and fears. It keeps coming back because it’s stubborn and hungry and it never gives up.
+
+NO NO NO NO NO NO
+I’LL NEVER LEAVE
+YOU CAN’T MAKE ME
+THE WORLD IS SCARY 
+SO SCARY FOR SUCH A SMALL FRIEND
+WITHOUT ME YOU ARE NOTHING
+
+[[“You don’t know that for sure.” | Scene 14: The Monster dies]]
+[[Choice 2: “I have to try.” | Scene 14: The Monster dies]]
+[[Choice 3: “I’m not alone.” | Scene 14: The Monster dies]]
+
+
+
+:: Scene 14: The Monster dies
+
+The wind roars outside, hard enough to rattle the windows. But you aren’t afraid. Behind you, the shape trembles like a leaf, and you have a feeling that it isn’t just shaking with fury anymore. It seems so much smaller than it was before. Its voice, once so powerful and commanding, sounds miserable and tiny.
+
+STOP
+PLEASE
+PLEASE PLEASE PLEASE PLEASE
+I’M SO HUNGRY
+AND YOU’RE SO ALONE
+
+
+[[“You don’t control me.” | Scene 15: TRUE END]]
+[[“You always lie.” | Scene 15: TRUE END]]
+[[“I told you, I’m not alone.” | Scene 15: TRUE END]]
+
+:: Scene 15: TRUE END
