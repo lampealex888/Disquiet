@@ -1,25 +1,32 @@
 :: StoryTitle
-Tweego Basic Setup
+Disquiet
+
+:: StoryInit
+<<cacheaudio "intro" "assets/Intro.mp3">>
+<<cacheaudio "see_monster" "assets/See Monster.mp3">>
+<<cacheaudio "game_over_1" "assets/Game Over (no.1).mp3">>
 
 :: Start
-@@#hello;Hello World!@@
+Welcome to our Game Jam 2022 submission
 [[Start Game | Scene 1: In your house]]
 
 :: Scene 1: In your house
 You’re in your house late at night doing homework
 You start hearing strange noises 
 What do you do?
-[[Investigate the sound|Scene 1a: Investigate the sound]]
-[[Ignore it|Scene 1b: Ignore the sound]]
-<<if $scene_1a_key is true and $scene_1b_key is true>>[[Try to go to sleep|Scene 2: Nightmare awakes you]]<</if>> <!-- unlocked after visiting scene 1a and 1b -->
+<<if $scene_1a_key isnot true>>[[Investigate the sound|Scene 1a: Investigate the sound]]<</if>>
+<<if $scene_1b_key isnot true>>[[Ignore it|Scene 1b: Ignore the sound]]<</if>>
+<<if $scene_1a_key is true and $scene_1b_key is true>>[[Try to go to sleep|Scene 2: Nightmare awakes you]]<</if>>
+<<set $currently_playing to false>>
+<<if $currently_playing is false>><<audio "intro" loop play>><<set $currently_playing to true>><</if>>
 
 :: Scene 1a: Investigate the sound
-<<set $scene_1a_key to true>>
 [[Can’t find anything in the house|Scene 1: In your house]]
+<<set $scene_1a_key to true>>
 
 :: Scene 1b: Ignore the sound
-<<set $scene_1b_key to true>>
 [[The sound becomes louder|Scene 1: In your house]]
+<<set $scene_1b_key to true>>
 
 :: Scene 2: Nightmare awakes you
 The clock chimes. It is now 2:00 AM.
@@ -33,9 +40,11 @@ Including the incomprehensible shape  hovering directly over the couch.
 <<if $scene_2b_key isnot true>>[[Freeze|Scene 2b Freeze]]<</if>>
 <<if $scene_2c_key isnot true>>[[Shut your eyes|Scene 2c Shut your eyes]]<</if>>
 <<if $ending_1_key is true and $ending_2_key is true>>[[Answer it|Scene 10]]<</if>>
+<<audio "intro" stop>>
+<<set $currently_playing to false>>
+<<if $currently_playing is false>><<audio "see_monster" loop play>><<set $currently_playing to true>><</if>>
 
 :: Scene 2b Freeze
-<<set $scene_2b_key to true>>
 You freeze like a cornered animal. Every muscle in your body locks up as the shape drifts closer like a black cloud, close enough to touch the tip of your nose. 
 DIDN’T I TELL YOU I’D BE BACK
 I TOLD YOU
@@ -44,12 +53,13 @@ I TOLD YOU
 I’LL NEVER LEAVE YOU
 Each word is like a stake through your temples and a knife in your heart. Your breath sticks in your throat; trying to catch it just twists the knife further.
 [[Go back|Scene 2: Nightmare awakes you]]
+<<set $scene_2b_key to true>>
 
 :: Scene 2c Shut your eyes
-<<set $scene_2c_key to true>>
 I CAN STILL SEE YOU
 It isn't quite a voice, but it's something you hear in the back of your head all the same, throbbing against the walls of your skull like a migraine.
 [[Go back|Scene 2: Nightmare awakes you]]
+<<set $scene_2c_key to true>>
 
 :: Scene 3: Run (BRANCH SPLIT)
 You regain control of your body and roll off the couch, hitting the ground with a thud. Crawling forward, you scramble to your feet, trying not to slide on the floor as you run.
@@ -57,6 +67,9 @@ Your only choice is obvious.
 [[Hide|Scene 4: Hide]]
 <<if $ending_1_key is true>>[[Run Outside|Scene 6: Run outside]]<</if>>
 <<if $ending_1_key is true and $ending_2_key is true>>[[Stand your ground|Scene 10: Stand your ground]]<</if>>
+<<audio "game_over_1" stop>>
+<<set $currently_playing to false>>
+<<if $currently_playing is false>><<audio "see_monster" loop play>><<set $currently_playing to true>><</if>>
 
 :: Scene 4: Hide
 This is your house. You know it better than anyone and where the best places are to hide.
@@ -76,8 +89,11 @@ FRIEND
 I FOUND YOU
 
 BAD END
-<<set $ending_1_key to true>>
 [[Go back|Scene 3: Run (BRANCH SPLIT)]]
+<<set $ending_1_key to true>>
+<<audio "see_monster" stop>>
+<<set $currently_playing to false>>
+<<if $currently_playing is false>><<audio "game_over_1" loop play>><<set $currently_playing to true>><</if>>
 
 :: Scene 5b (The Closet)
 You enter the hallway between your bedroom and the living room, running past the grandfather clock. You don’t hear it ticking anymore, as if time itself has stopped moving.
@@ -88,8 +104,11 @@ You can hear something crawling across the floor, moving so stealthily you might
 I WILL ALWAYS BE HERE
 
 BAD END
-<<set $ending_1_key to true>>
 [[Go back|Scene 3: Run (BRANCH SPLIT)]]
+<<set $ending_1_key to true>>
+<<audio "see_monster" stop>>
+<<set $currently_playing to false>>
+<<if $currently_playing is false>><<audio "game_over_1" loop play>><<set $currently_playing to true>><</if>>
 
 :: Scene 5c (Under the bed)
 You enter the hallway between your bedroom and the living room, running past the grandfather clock. You don’t hear it ticking anymore, as if time itself has stopped moving.
@@ -100,8 +119,11 @@ Then you hear the bed springs squeak above your head.
 YOU CANNOT HIDE FRIEND
 
 BAD END
-<<set $ending_1_key to true>>
 [[Go back|Scene 3: Run (BRANCH SPLIT)]]
+<<set $ending_1_key to true>>
+<<audio "see_monster" stop>>
+<<set $currently_playing to false>>
+<<if $currently_playing is false>><<audio "game_over_1" loop play>><<set $currently_playing to true>><</if>>
 
 :: Scene 6: Run Outside
 You have a feeling that you wouldn’t get very hard if you tried to hide. So you decide to run. 
