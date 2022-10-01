@@ -5,10 +5,16 @@ Disquiet
 <<cacheaudio "intro" "assets/Intro.mp3">>
 <<cacheaudio "see_monster" "assets/See Monster.mp3">>
 <<cacheaudio "game_over_1" "assets/Game Over (no.1).mp3">>
+<<cacheaudio "run" "assets/Run.mp3">>
+<<cacheaudio "cornfield" "assets/Cornfield.mp3">>
+<<cacheaudio "game_over_2" "assets/Game Over (no.2).mp3">>
+<<cacheaudio "confront" "assets/Confront.mp3">>
+<<cacheaudio "true_end" "assets/true end.mp3">>
 
 :: Start
 Welcome to our Game Jam 2022 submission
 [[Start Game | Scene 1: In your house]]
+<<audio "true_end" stop>>
 
 :: Scene 1: In your house
 It's 8:00 PM on a Friday night. You are alone. None of this is very surprising.
@@ -28,6 +34,7 @@ What should you do?
 <<if $scene_1a_key isnot true>>[[Look out the window|Scene 1a: Look out the window]]<</if>>
 <<if $scene_1b_key isnot true>>[[Ignore it|Scene 1b: Ignore the sound]]<</if>>
 <<if $scene_1a_key is true and $scene_1b_key is true>>[[Go to sleep|Scene 2: You wake up]]<</if>>
+<<audio "true_end" stop>>
 <<set $currently_playing to false>>
 <<if $currently_playing is false>><<audio "intro" loop play>><<set $currently_playing to true>><</if>>
 
@@ -64,7 +71,7 @@ Including the incomprehensible shape hovering directly over you.
 [[Run|Scene 3: Run (BRANCH SPLIT)]]
 <<if $scene_2b_key isnot true>>[[Freeze|Scene 2b Freeze]]<</if>>
 <<if $scene_2c_key isnot true>>[[Shut your eyes|Scene 2c Shut your eyes]]<</if>>
-<<if $ending_1_key is true and $ending_2_key is true>>[[Stand your ground|Scene 10]]<</if>>
+<<if $ending_1_key is true and $ending_2_key is true>>[[Stand your ground|Scene 10: Stand your ground]]<</if>>
 <<audio "intro" stop>>
 <<set $currently_playing to false>>
 <<if $currently_playing is false>><<audio "see_monster" loop play>><<set $currently_playing to true>><</if>>
@@ -92,9 +99,11 @@ Your only choice is obvious.
 [[Hide|Scene 4: Hide]]
 <<if $ending_1_key is true>>[[Run Outside|Scene 6: Run Outside]]<</if>>
 <<if $ending_1_key is true and $ending_2_key is true>>[[Stand your ground|Scene 10: Stand your ground]]<</if>>
-<<audio "game_over_1" stop>>
 <<set $currently_playing to false>>
 <<if $currently_playing is false>><<audio "see_monster" loop play>><<set $currently_playing to true>><</if>>
+<<audio "game_over_1" stop>>
+<<audio "game_over_2" stop>>
+<<audio "see_monster" loop play>>
 
 :: Scene 4: Hide
 This is your house. You know it better than anyone and where the best places are to hide.
@@ -117,8 +126,7 @@ BAD END
 [[Go back|Scene 3: Run (BRANCH SPLIT)]]
 <<set $ending_1_key to true>>
 <<audio "see_monster" stop>>
-<<set $currently_playing to false>>
-<<if $currently_playing is false>><<audio "game_over_1" loop play volume 0.40>><<set $currently_playing to true>><</if>>
+<<audio "game_over_1" loop play volume 0.40>>
 
 :: Scene 5b (The Closet)
 You enter the hallway between your bedroom and the living room, running past the grandfather clock. You don’t hear it ticking anymore, as if time itself has stopped moving.
@@ -132,8 +140,7 @@ BAD END
 [[Go back|Scene 3: Run (BRANCH SPLIT)]]
 <<set $ending_1_key to true>>
 <<audio "see_monster" stop>>
-<<set $currently_playing to false>>
-<<if $currently_playing is false>><<audio "game_over_1" loop play volume 0.40>><<set $currently_playing to true>><</if>>
+<<audio "game_over_1" loop play volume 0.40>>
 
 :: Scene 5c (Under the bed)
 You enter the hallway between your bedroom and the living room, running past the grandfather clock. You don’t hear it ticking anymore, as if time itself has stopped moving.
@@ -147,28 +154,32 @@ BAD END
 [[Go back|Scene 3: Run (BRANCH SPLIT)]]
 <<set $ending_1_key to true>>
 <<audio "see_monster" stop>>
-<<set $currently_playing to false>>
-<<if $currently_playing is false>><<audio "game_over_1" loop play volume 0.40>><<set $currently_playing to true>><</if>>
+<<audio "game_over_1" loop play volume 0.40>>
 
 :: Scene 6: Run Outside
 You have a feeling that you wouldn’t get very hard if you tried to hide. So you decide to [[run. | Scene 7 ]]
-
+<<audio "see_monster" stop>>
+<<audio "run" loop play volume 0.40>>
 
 :: Scene 7
 Your neighbors run a farm, but they aren’t home. In between you and your neighbor's house is a vast cornfield that stretches out far past the limits of your combined properties. The stalks rustle in the rain and wind. The fallen corn husks crunch and crinkle under your feet as you stand at the edge of the field. 
 Behind you, a voice howls with the wind, furious.
 DON’T RUN FROM ME FRIEND
 
-[[ Run deeper into the cornfield | 7a  ]]
+[[Run deeper into the cornfield | 7a]]
 [[Run to the side of the house | 7b ]]
 
 :: 7a
 You plunge into the cornfield. The tall stalks smack your face as you run and frantically push past them. You can hear the monster tearing at the cornstalks just behind you. You know that it is not far behind. Your outstretched hand breaks free of the field as your foot slips in the wet mud, and you slide uncontrollably down the unseen hill at the edge of the field. The only thing you see is mud and rain as you tumble over yourself down the steep hill.
 [[Crawl | Scene 8]]
+<<audio "run" stop>>
+<<audio "cornfield" loop play>>
 
 :: 7b
 You take the leftmost path that leads around the side of the house instead. The rain hits your face, making it impossible to see clearly. The porch lights are blurry in your eyes; Suddenly, you go from seeing nothing to seeing too much. Your feet get tangled up, and before you can do anything to stop your momentum, you find yourself tripping and sliding through the mud down a long hill.
 [[Crawl | Scene 8]]
+<<audio "run" stop>>
+<<audio "cornfield" loop play>>
 
 :: Scene 8 
 Finally, your body stops tumbling and you come to a stop at the foot of the hill. You crawl through the mud, pulling yourself along by your arms. The ground squishes under your fingers as you dig them into the sludge. You keep going until you feel solid earth and the sturdy body of a log blocking your path.
@@ -183,7 +194,9 @@ You keep waiting.
 You never stop waiting.
 
 [[NORMAL END | Scene 3: Run (BRANCH SPLIT)]]
-
+<<set $ending_2_key to true>>
+<<audio "cornfield" stop>>
+<<audio "game_over_2" loop play>>
 
 :: Scene 10: Stand your ground
 You tried running. You tried hiding. Somehow you already know this. But there’s still one thing you haven’t tried. One last option.
@@ -192,6 +205,8 @@ The voice crackles through your ears like static. Something is behind you, and e
 WHAT DO YOU WANT TO PLAY NEXT
 
 [[“I don’t want to play with you.” | Scene 11: Stand your ground]]
+<<audio "see_monster" stop>>
+<<audio "confront" loop play>>
 
 :: Scene 11: Stand your ground
 The static in your head falters for a moment. You get the sense that it’s taken aback, even though  everything else about it is beyond your understanding.
@@ -229,8 +244,8 @@ SO SCARY FOR SUCH A SMALL FRIEND
 WITHOUT ME YOU ARE NOTHING
 
 [[“You don’t know that for sure.” | Scene 14: The Monster dies]]
-[[Choice 2: “I have to try.” | Scene 14: The Monster dies]]
-[[Choice 3: “I’m not alone.” | Scene 14: The Monster dies]]
+[[“I have to try.” | Scene 14: The Monster dies]]
+[[“I’m not alone.” | Scene 14: The Monster dies]]
 
 
 
@@ -250,3 +265,27 @@ AND YOU’RE SO ALONE
 [[“I told you, I’m not alone.” | Scene 15: TRUE END]]
 
 :: Scene 15: TRUE END
+[[“I’m never alone.”|Scene 15b]]
+[[“It won’t end this way.”|Scene 15b]]
+[[“There’s always another option.”|Scene 15b]]
+<<audio "confront" stop>>
+<<audio "true_end" loop play>>
+
+:: Scene 15b
+[[“I am capable of so much more than you think I am. I’m stronger than you are.”|Scene 15c]]
+[[“I might not be able to believe it right now, but that doesn’t mean it isn’t true. I just have to be patient with myself.”|Scene 15c]]
+[[“There’s always a chance to change and do better. To be better. To keep going.”|Scene 15c]]
+
+:: Scene 15c
+[[“You’re here because I fed you. I let you grow. I hid from you.  I ran from you.”|Scene 15d]]
+
+:: Scene 15d
+[["But not anymore."|Scene 15e]]
+
+:: Scene 15e
+[["This time, I’m fighting back."|Scene 16: End credits]]
+
+:: Scene 16: End credits
+The end
+[[Play again?|Scene 1: In your house]]
+[[Main menu|Start]]
