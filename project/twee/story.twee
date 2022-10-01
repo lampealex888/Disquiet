@@ -13,7 +13,7 @@ Disquiet
 <<cacheaudio "monster_noise" "assets/Monster 1.mp3">>
 
 :: Start
-Welcome to our Game Jam 2022 submission
+A text-based horror game where failure is not the end. Three routes.
 [[Start Game | Scene 1: In your house]]
 <<audio "true_end" stop>>
 
