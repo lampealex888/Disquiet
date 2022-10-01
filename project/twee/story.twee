@@ -1,0 +1,24 @@
+:: StoryTitle
+Tweego Basic Setup
+
+:: Start
+@@#hello;Hello World!@@
+[[Start Game | Scene 1: In your house]]
+
+:: Scene 1: In your house
+You’re in your house late at night doing homework
+You start hearing strange noises 
+What do you do?
+[[Investigate the sound|Scene 1.1: Investigate the sound]]
+[[Ignore it|Scene 1.2: Ignore the sound]]
+<!-- unlocked after visiting scene 1.1 and 1.2 -->
+[[Try to go to sleep|Scene 2: Nightmare awakes you]] 
+(if: $key1 is true and $key2 is true and $key3 is true)[[[Try to go to sleep|Scene 2: Nightmare awakes you]]]
+
+:: Scene 1.1: Investigate the sound
+[[Can’t find anything in the house|Scene 1: In your house]]
+
+:: Scene 1.2: Ignore the sound
+[[The sound becomes louder|Scene 1: In your house]]
+
+:: Scene 2: Nightmare awakes you
