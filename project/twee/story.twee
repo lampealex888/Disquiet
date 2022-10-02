@@ -394,6 +394,8 @@ The wind roars outside, hard enough to rattle the windows. But you aren’t afra
 [["\"It won’t end this way.\""|Scene 15b]]
 [["\"There’s always another option.\""|Scene 15b]]
 <<audio "confront" stop>>
+<<audio "monster_2" stop>>
+<<audio "monster_3" stop">>
 <<audio "true_end" loop play>>
 
 :: Scene 15b
