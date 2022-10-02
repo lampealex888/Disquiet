@@ -183,7 +183,7 @@ Very slowly, the door to the cellar creaks open, so quiet you can only hear it w
 
 ''I̷ ̸F̵O̴U̷N̶D̶ ̸Y̷O̶U̷''</span>
 
-[img[assets/Basement 1.jpg]]
+[img[assets/updated cellar.jpg]]
 [[BAD END|Scene 3: Run (BRANCH SPLIT)]]
 <<set $ending_1_key to true>>
 <<audio "see_monster" stop>>
@@ -239,7 +239,7 @@ Your neighbors run a farm, but they aren’t home. In between you and your neigh
 Behind you, a voice howls with the wind, furious.
 
 <span class = "dialogue">''D̷͎͆Ǒ̷̜N̴͍͆’̸̳̔T̷͉̀ ̷͇̌R̵̙̃Ǘ̸̫N̵̪͆ ̸̬̌F̴̃͜R̴͙̚I̶̞͘E̸͇͠Ñ̴̨D̴̜͂''</span>
-[img[assets/Outside 1.jpg]]
+[img[assets/outside.jpg]]
 
 [[Run deeper into the cornfield | 7a]]
 [[Run to the side of the house | 7b ]]
