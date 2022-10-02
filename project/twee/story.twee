@@ -13,7 +13,7 @@ Disquiet
 <<cacheaudio "monster_noise" "assets/Monster 1.mp3">>
 
 :: Start
-A text-based horror game where failure is not the end. Three routes.
+A text-based horror game where failure is not the end. Three routes. For best experience, wear headphones.
 [[Start Game | Scene 1: In your house]]
 <<audio "true_end" stop>>
 
