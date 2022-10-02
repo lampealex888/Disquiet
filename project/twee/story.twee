@@ -78,11 +78,11 @@ Six hours pass.
 :: Scene 1.5
 You don't hear anything but the TV and the rain and- 
 
-<span class = "dialogue">''FRIEND''</span>
+<div class="dialogue" title="dialogue">''FRIEND''</div>
 
 There's something else. Not just the storm, but something quiter, like a voice in the back of your head that won't go away.
 
-<span class = "dialogue">''FRIEND L̵E̶T̸ ̵M̸E̸ ̴I̵N̶''</span>
+<div class="dialogue" title="dialogue">''FRIEND L̵E̶T̸ ̵M̸E̸ ̴I̵N̶''</div>
 
 You can't quite begin to describe it, but it sounds familiar. 
 
@@ -101,13 +101,13 @@ The clock chimes. It is now 2:00 AM.
 
 It's still raining outside, but that isn't what wakes you up.
 
-<span class = "dialogue">''F̸R̶I̷E̶N̶D̵''</span>
+<div class="dialogue" title="dialogue">''F̸R̶I̷E̶N̶D̵''</div>
 
 It's dark when you open your eyes. At some point in the night the power must have gone out, plunging the house into complete darkness. You can barely make out anything in front of you.
 
-<span class = "dialogue">''HELLO FRIEND''</span>
+<div class="dialogue" title="dialogue">''HELLO FRIEND''</div>
 
-<span class = "dialogue">''DID YOU M̸I̴S̵S̶ ̵M̴E̷''</span>
+<div class="dialogue" title="dialogue">''DID YOU M̸I̴S̵S̶ ̵M̴E̷''</div>
 
 Including the incomprehensible shape hovering directly over the couch.
 
@@ -126,7 +126,7 @@ Including the incomprehensible shape hovering directly over the couch.
 :: Scene 2b Freeze
 You freeze like a cornered animal. Every muscle in your body locks up as the shape drifts closer like a black cloud, close enough to touch the tip of your nose. 
 
-<span class = "dialogue">''DIDN’T I TELL YOU I’D BE BACK''
+<div class="dialogue" title="dialogue">''DIDN’T I TELL YOU I’D BE BACK''
 
 ''I TOLD YOU''
 
@@ -134,7 +134,7 @@ You freeze like a cornered animal. Every muscle in your body locks up as the sha
 
 ''I TOLD YOU''
 
-''I’LL N̵E̵V̸E̶R̸ LEAVE YOU''</span>
+''I’LL N̵E̵V̸E̶R̸ LEAVE YOU''</div>
 
 Each word is like a stake through your temples and a knife in your heart. Your breath sticks in your throat; trying to suck in a breath as the knife just twists in deeper.
 
@@ -144,7 +144,7 @@ Each word is like a stake through your temples and a knife in your heart. Your b
 
 :: Scene 2c Shut your eyes
 
-<span class = "dialogue">''I CAN STILL SEE YOU''</span>
+<div class="dialogue" title="dialogue">''I CAN STILL SEE YOU''</div>
 
 It isn't quite a voice, but you hear it bouncing around inside your head all the same, throbbing against the walls of your skull like a migraine.
 
@@ -192,9 +192,9 @@ You can hear something moving around upstairs. The floorboards creak softly, sto
 
 Very slowly, the door to the cellar creaks open, so quiet you can only hear it when you hold your breath. You can still hear it over the hammer of your heartbeat, drowning out the world. 
 
-<span class = "dialogue">''FRIEND''
+<div class="dialogue" title="dialogue">''FRIEND''
 
-''I̷ ̸F̵O̴U̷N̶D̶ ̸Y̷O̶U̷''</span>
+''I̷ ̸F̵O̴U̷N̶D̶ ̸Y̷O̶U̷''</div>
 
 [img[assets/updated cellar.jpg]]
 [[BAD END|Scene 3: Run (BRANCH SPLIT)]]
@@ -211,9 +211,9 @@ You shut yourself in your closet, hide under a pile of laundry, and listen.
 
 You can hear something crawling across the floor, moving so stealthily you might miss the sound entirely compared to the ragged breathing coming from your throat. The scant light from under the door goes out.
 
-<span class = "dialogue"> ''DON'T S̸C̵R̶E̷A̵M̴ DON'T C̸R̶Y̵ DON'T S̵T̶R̸U̴G̸G̶L̷E̷ FRIEND''<!-- TODO: make text glitchy -->
+<div class="dialogue" title="dialogue"> ''DON'T S̸C̵R̶E̷A̵M̴ DON'T C̸R̶Y̵ DON'T S̵T̶R̸U̴G̸G̶L̷E̷ FRIEND''<!-- TODO: make text glitchy -->
 
-''I̵ ̵W̴I̵L̴L̸ ̸A̷L̵W̶A̸Y̵S̷ ̶B̶E̸ ̵H̷E̵R̸E̵''</span>
+''I̵ ̵W̴I̵L̴L̸ ̸A̷L̵W̶A̸Y̵S̷ ̶B̶E̸ ̵H̷E̵R̸E̵''</div>
 
 [img[assets/Closet.jpg]]
 [[BAD END|Scene 3: Run (BRANCH SPLIT)]]
@@ -232,7 +232,7 @@ Two seconds pass, then three. Then ten. Twenty. You start to breathe again.
 
 Then you hear the bed springs squeak above your head. 
 
-<span class = "dialogue">''Y̸O̶U̷ ̷C̷A̸N̷N̶O̷T̴ ̸H̷I̴D̵E̸ ̷F̵R̴I̴E̸N̶D̶'' <!-- TODO: make text glitchy --></span>
+<div class="dialogue" title="dialogue">''Y̸O̶U̷ ̷C̷A̸N̷N̶O̷T̴ ̸H̷I̴D̵E̸ ̷F̵R̴I̴E̸N̶D̶'' <!-- TODO: make text glitchy --></div>
 
 [img[assets/Bedroom.jpg]]
 [[BAD END|Scene 3: Run (BRANCH SPLIT)]]
@@ -253,7 +253,7 @@ Your neighbors run a farm, but they aren’t home. In between you and your neigh
 
 Behind you, a voice howls with the wind, furious.
 
-<span class = "dialogue">''D̷͎͆Ǒ̷̜N̴͍͆’̸̳̔T̷͉̀ ̷͇̌R̵̙̃Ǘ̸̫N̵̪͆ ̸̬̌F̴̃͜R̴͙̚I̶̞͘E̸͇͠Ñ̴̨D̴̜͂''</span>
+<div class="dialogue" title="dialogue">''D̷͎͆Ǒ̷̜N̴͍͆’̸̳̔T̷͉̀ ̷͇̌R̵̙̃Ǘ̸̫N̵̪͆ ̸̬̌F̴̃͜R̴͙̚I̶̞͘E̸͇͠Ñ̴̨D̴̜͂''</div>
 [img[assets/outside.jpg]]
 
 [[Run deeper into the cornfield | 7a]]
@@ -309,11 +309,11 @@ You don’t want to do this anymore.
 :: Scene 10: Stand your ground
 You tried running. You tried hiding. Somehow you already know this. But there’s still one thing you haven’t tried. One last option.
 
-<span class = "dialogue">''F̸R̶I̷E̶N̶D̵''</span>
+<div class="dialogue" title="dialogue">''F̸R̶I̷E̶N̶D̵''</div>
 
 The voice crackles through your ears like static. Something is behind you, and even though you can’t hear it moving, you know it’s looming over you, close enough for you to realize that it has a mouth.
 
-<span class = "dialogue">''WHAT DO YOU WANT TO P̷L̵A̴Y̵ ̸N̴E̶X̶T̴''</span>
+<div class="dialogue" title="dialogue">''WHAT DO YOU WANT TO P̷L̵A̴Y̵ ̸N̴E̶X̶T̴''</div>
 
 [img[assets/Monster.jpg]]
 [["\"I don’t want to play with you.\"" | Scene 11: Stand your ground]]
@@ -324,11 +324,11 @@ The voice crackles through your ears like static. Something is behind you, and e
 :: Scene 11: Stand your ground
 The static in your head falters for a moment. You get the sense that it’s taken aback, even though  everything else about it is beyond your understanding.
 
-<span class = "dialogue">''F̷I̷N̵E̶''
+<div class="dialogue" title="dialogue">''F̷I̷N̵E̶''
 
 ''NO MORE GAMES NO MORE R̶U̷N̸N̶I̷N̷G̸ ̵N̴O̴ ̵M̸O̷R̸E̶ HIDING''
 
-''I̸T̷'̶S̴ ̶J̶U̵S̷T̴ ̶U̷S̶ ̷N̴O̷W̷''</span>
+''I̸T̷'̶S̴ ̶J̶U̵S̷T̴ ̶U̷S̶ ̷N̴O̷W̷''</div>
 
 [img[assets/Monster.jpg]]
 [["\"I’m sick of you!\"" |Scene 12: The Monster fights back]]
@@ -338,13 +338,13 @@ The static in your head falters for a moment. You get the sense that it’s take
 :: Scene 12: The Monster fights back
 The not-so-distant rumble of thunder outside your house reminds you that the storm hasn’t stopped. If anything, it’s getting worse. Displeased, the voice in your head shakes in anger.
 
-<span class = "dialogue">''NO''
+<div class="dialogue" title="dialogue">''NO''
 
 ''N̴̰̐O̵̩͒ ̵̨̒N̵̡̽Ö̵̟ ̷̧̈́N̵͍̕Õ̶͚''
 
 ''B̶͈̓A̷̙͌D̴͎͐ ̶̲͘F̷̦̐R̶͙̿Ì̴͜E̶̾ͅN̸̛̼D̴̢̓ ̷̱̓V̶̢͌E̵̟͌R̶͇̎Y̶͔̐ ̴̯͛B̸̟̊A̶̯͘D̸̷͕̙̬͝͝''
 
-''W̵H̶O̴ ̴D̴O̶ ̸Y̷O̶U̵ ̴T̷H̶I̵N̴K̷ ̵Y̵O̶U̵'̴R̷E̷ ̴S̵P̸E̷A̶K̶I̴N̵G̷ ̸T̵O̶̵͇̓''</span>
+''W̵H̶O̴ ̴D̴O̶ ̸Y̷O̶U̵ ̴T̷H̶I̵N̴K̷ ̵Y̵O̶U̵'̴R̷E̷ ̴S̵P̸E̷A̶K̶I̴N̵G̷ ̸T̵O̶̵͇̓''</div>
 
 [img[assets/Monster.jpg]]
 [["\"Nothing worth my time.\"" | Scene 13: The Monster weakens]]
@@ -356,7 +356,7 @@ The not-so-distant rumble of thunder outside your house reminds you that the sto
 
 Now you know why the voice sounds so familiar. You’ve heard it many times before, always tucked away in the back of your head with all your most private thoughts and fears. It keeps coming back because it’s stubborn and hungry and it never gives up.
 
-<span class = "dialogue">''NO NO NO NO NO NO''
+<div class="dialogue" title="dialogue">''NO NO NO NO NO NO''
 
 ''I̶̠̭͖̋̾͆̊͑'̸͚̩͔͛́̔ͅL̶͖̜͔͐L̸̛̠̪͈̮̺͇̿̑̐ ̴̩͑̓Ǹ̶̠̠̳̟E̴̹̙̙̐̏̓͛V̴͍͓̮̹̽̚Ę̴͇̹̹̿̈͑̃̉R̶̩͔̅ͅ ̷̢͙͓̝͉̱́L̶̢̠̱̦̺͘͜͝Ë̶͈̪̏Ä̷̯̟̗̐̆͋͝V̵̜̤͌͆́E̷̡̞̩̣̽̈́̈́͘''
 
@@ -366,7 +366,7 @@ Now you know why the voice sounds so familiar. You’ve heard it many times befo
 
 ''Š̸́͜͝Ȏ̴̢̭̾̓ ̵͖̮͒̓͒͘Ş̷̙̙̲̀̒̓͠C̸͈̪̆Ả̸̰̻̓Ȓ̸̭̘̓̊Y̵̥͕̬̹͗ ̸͖͈̝̞̊F̶̬̀̿Ö̴̤̬́̇R̵͉̀͑ ̵̩̣͖̆S̸͎̫̮̿͆Ú̷̧͚̩͈C̵͖͆H̵͔̿́ ̶̟̻̟̫̇̀́A̸̭͙̤͌̉̒ ̶̺̅͒͗S̵̡͕͛͠M̸̦͒͊Ã̷̡̹̪̦L̵̢̫̈́L̴̠̥̜̮̃̉ ̸̻̠̻̣̉C̴͔̝͖̀͜H̷̨̖̣̀͑I̴̱̰̳͌̀̀́L̵̡̙̏͜D̶̪̜͛̄''
 
-''Ẅ̶͍́̕I̴̘͐͋͝T̸͕͕͗ͅḦ̴̞̾̉Ô̴̮̚U̵̻̗̅͠Ṱ̷͑̇́ ̸̤̆͑M̸̯͖̼̐͌̃Ë̶̳̥͘̕ ̸͉̺̉̉Y̷̫̚Ơ̸͍͍̙̾̿U̴͇̚ ̶͖͖͔͛͗͝Ā̸͍̊Ṙ̸͓Ë̷̡̳͠ ̸̠͂N̵̗̟͗O̴̦̐̾́T̵̲̔̅̈͜H̵̻͚̊̿̔I̸̼̙̼̍N̶̦̭͂́͝Ǵ̸͎͕''</span>
+''Ẅ̶͍́̕I̴̘͐͋͝T̸͕͕͗ͅḦ̴̞̾̉Ô̴̮̚U̵̻̗̅͠Ṱ̷͑̇́ ̸̤̆͑M̸̯͖̼̐͌̃Ë̶̳̥͘̕ ̸͉̺̉̉Y̷̫̚Ơ̸͍͍̙̾̿U̴͇̚ ̶͖͖͔͛͗͝Ā̸͍̊Ṙ̸͓Ë̷̡̳͠ ̸̠͂N̵̗̟͗O̴̦̐̾́T̵̲̔̅̈͜H̵̻͚̊̿̔I̸̼̙̼̍N̶̦̭͂́͝Ǵ̸͎͕''</div>
 
 [img[assets/Monster.jpg]]
 [["\"You don’t know that for sure.\"" | Scene 14: The Monster dies]]
@@ -379,7 +379,7 @@ Now you know why the voice sounds so familiar. You’ve heard it many times befo
 
 The wind roars outside, hard enough to rattle the windows. But you aren’t afraid. Behind you, the shape trembles like a leaf, and you have a feeling that it isn’t just shaking with fury anymore. It seems so much smaller than it was before. Its voice, once so powerful and commanding, sounds miserable and tiny.
 
-<span class = "dialogue">''STOP''
+<div class="dialogue" title="dialogue">''STOP''
 
 ''P̸͔͕͗́̀̈́̅̈͑̄͌͊̈́͒̍͘̚Ḽ̴͓͓͉̼̈́̉È̶̡͚̺̖́́͛Ȧ̴̢̹͉̪̜̳̋̏̌̔̈͗̈̃̀̀́͘Ŝ̶͚̩̪͔̙͈͓̥̥̝͉̼̀̅̚͜͜͠͝ͅȨ̷̢̡̢̫̥͔͓̫̫͔͔͚̝͚̅̂͋͌̔́̉́̒''
 
@@ -387,7 +387,7 @@ The wind roars outside, hard enough to rattle the windows. But you aren’t afra
 
 ''I̵̢̛̛̗̼͇̳̩̻͎̳͙͙͆̔͂͐͒̀̄̓̇̓͛̃͑̚̕̚͜͝͠'̴̧̘̗͙̌̊̿͒͒̐̀̀̂̏͂̊̒M̸̨̟͔̞̰̖̤͖̫͙͎̠͔̤̓͐̀̎̑́̓͋̐̄͊̍̅̈̂͗̉͆͝ͅ ̴̱̖̰̭̃̓̈́̍̈̕Ş̴̨̲͍͔̦͕͍͉̖̳͔͈̣͔͚̫̝͋̉͊̈́̃̄̿̏̎̈́̍̄͛̌̇͘͝͠Ǫ̴̙̠̞̈́͌͋́̽̔͘ ̷̢̤͖̫̰̟̠͚͈͋͂̈́̒̉͌̔̌̈̍̆̆͒͗H̷̢̩̘̹̗̜̾̏͗̂̔̃̑͆̈̈́̎́̍͂̅ͅŨ̷̧̧̢̞̝̘͚͇͕͜N̸̢͈̘̻͙̫̯͑̑̽̽͋̽͐͆́̐͛̓̑̍͗̚͠͝G̴̪͍̭̀̓̀̐̇͗̆̚Ŗ̵̗͚̙̣̳͔͖̲̘̲̂͋̆̀̉̎͑̔ͅY̴̡̩̮͓̟̗̘̳̳̟̩͂̿̐̂̃͌̅̐͛̍̽̐̍͆͜͜͠͝''
 
-''A̴̡̬̯͖͚̜̹͕̓̓̈́̈͘ͅN̷̡͕̣̝͇̩̻̳̜͒̊̔̀̏̎͐̆̑͘͝ͅD̶͓̪̜̯̰͙̑͑̓͛̒̕̚͜͜ ̸̡̢̝̲̤̠̮̗̲̘̘̓͛̃̆̋̈͝ͅÝ̵̢̡̤̥̘̻̲͚̱̬̦̲͔͠O̸̡̫̥͔̣̬̺̥͎̞̭͓̐͋͂̇̊́͑͊̃̓̅̀̍̔͂͊̎̈́̅̚͝U̷͓̩̖̼͔͓̦͖̬̖̫̭̳͖̦̩̜̼͍͍̗̓̓̏͘ͅ'̴̢̡̡̯̥͈̝̜͚̙͖̻̣̜̼͇̹͖͈͙̦̘́̿͛͐̇̀͛͆̏̋͌̅͘͘͝Ŗ̵̩̟̲͓̬̙̩͍͖̩͓̩̮̜̳̭̫̉̔̌́͊̂̔͋̈́̈́͊͌̿̊̍̋̆̔̚͝͝ͅȨ̶̭̠͎͖̤̖̳̻̜̀̎̃ ̷̧̧̧̡͎̲̗͙̺͚̭̣͔̪͐̽̍̄̏͛̈́́̌̔͒͆̎̈́͘͠͠S̴̢̨̢̮̗͈͕͈̩̖̠̄̾̈̿̇͑̕Ǫ̸̢̡͓̠̟̖̳͇̜̤̫̩͜͠ ̶̨̛͎̬̳̤̣̱̹̺̩̟̹͍̗͎͕̮̺̝̭͉̍̈́͘ͅÁ̸̛̛͔͕͍̤͕̣̺͋̿͆͊͒̊̿̉͘̚̕͘͘͜͜͜L̴̛͕͉̥̮͚̳̞̾͝Ö̴͉́́͆̑͑̀͌͘͝N̸̢̮̭̙̖̙̬̺̱̟̹̳̏̌̏ͅͅͅE̸̡̡̛̟̺̼̞̝̗͖̓̔̈͂̉''</span>
+''A̴̡̬̯͖͚̜̹͕̓̓̈́̈͘ͅN̷̡͕̣̝͇̩̻̳̜͒̊̔̀̏̎͐̆̑͘͝ͅD̶͓̪̜̯̰͙̑͑̓͛̒̕̚͜͜ ̸̡̢̝̲̤̠̮̗̲̘̘̓͛̃̆̋̈͝ͅÝ̵̢̡̤̥̘̻̲͚̱̬̦̲͔͠O̸̡̫̥͔̣̬̺̥͎̞̭͓̐͋͂̇̊́͑͊̃̓̅̀̍̔͂͊̎̈́̅̚͝U̷͓̩̖̼͔͓̦͖̬̖̫̭̳͖̦̩̜̼͍͍̗̓̓̏͘ͅ'̴̢̡̡̯̥͈̝̜͚̙͖̻̣̜̼͇̹͖͈͙̦̘́̿͛͐̇̀͛͆̏̋͌̅͘͘͝Ŗ̵̩̟̲͓̬̙̩͍͖̩͓̩̮̜̳̭̫̉̔̌́͊̂̔͋̈́̈́͊͌̿̊̍̋̆̔̚͝͝ͅȨ̶̭̠͎͖̤̖̳̻̜̀̎̃ ̷̧̧̧̡͎̲̗͙̺͚̭̣͔̪͐̽̍̄̏͛̈́́̌̔͒͆̎̈́͘͠͠S̴̢̨̢̮̗͈͕͈̩̖̠̄̾̈̿̇͑̕Ǫ̸̢̡͓̠̟̖̳͇̜̤̫̩͜͠ ̶̨̛͎̬̳̤̣̱̹̺̩̟̹͍̗͎͕̮̺̝̭͉̍̈́͘ͅÁ̸̛̛͔͕͍̤͕̣̺͋̿͆͊͒̊̿̉͘̚̕͘͘͜͜͜L̴̛͕͉̥̮͚̳̞̾͝Ö̴͉́́͆̑͑̀͌͘͝N̸̢̮̭̙̖̙̬̺̱̟̹̳̏̌̏ͅͅͅE̸̡̡̛̟̺̼̞̝̗͖̓̔̈͂̉''</div>
 
 [img[assets/Monster.jpg]]
 [["\"You don’t control me.\"" | Scene 15: TRUE END]]
