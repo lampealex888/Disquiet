@@ -19,8 +19,8 @@ Disquiet
 <<cacheaudio "soft_wind" "assets/459977__florianreichelt__soft-wind.mp3">>
 
 :: Start
-A text-based horror game where failure is not the end. Three routes. For best experience, wear headphones.
-[img[assets/House 2.jpg]]
+A text-based horror game where failure is not the end. Three routes. For best experience, play in a dark room and wear headphones.
+[img[assets/disquiet.jpg]]
 [[Start Game | Scene 1: In your house]]
 <<audio "true_end" stop>>
 
@@ -394,7 +394,7 @@ The wind roars outside, hard enough to rattle the windows. But you aren’t afra
 [["\"There’s always another option.\""|Scene 15b]]
 <<audio "confront" stop>>
 <<audio "monster_2" stop>>
-<<audio "monster_3" stop">>
+<<audio "monster_3" stop>>
 <<audio "true_end" loop play>>
 
 :: Scene 15b
