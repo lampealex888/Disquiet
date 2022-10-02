@@ -112,7 +112,7 @@ It's dark when you open your eyes. At some point in the night the power must hav
 
 Including the incomprehensible shape hovering directly over the couch.
 
-[img[assets/Monster.jpg]]
+[img[assets/updated monster.gif]]
 [[Run|Scene 3: Run (BRANCH SPLIT)]]
 <<if $scene_2b_key isnot true>>[[Freeze|Scene 2b Freeze]]<</if>>
 <<if $scene_2c_key isnot true>>[[Shut your eyes|Scene 2c Shut your eyes]]<</if>>
@@ -139,7 +139,7 @@ You freeze like a cornered animal. Every muscle in your body locks up as the sha
 
 Each word is like a stake through your temples and a knife in your heart. Your breath sticks in your throat; trying to suck in a breath as the knife just twists in deeper.
 
-[img[assets/Monster.jpg]]
+[img[assets/updated monster.gif]]
 [[Go back|Scene 2: You wake up]]
 <<set $scene_2b_key to true>>
 
@@ -157,7 +157,7 @@ You regain control of your body and roll off the couch, hitting the ground with 
 
 Your only choice is obvious.
 
-[img[assets/Monster.jpg]]
+[img[assets/updated monster.gif]]
 [[Hide|Scene 4: Hide]]
 <<if $ending_1_key is true>>[[Run outside|Scene 6: Run Outside]]<</if>>
 <<if $ending_1_key is true and $ending_2_key is true>>[[Stand your ground|Scene 10: Stand your ground]]<</if>>
@@ -174,7 +174,7 @@ This is your house. You know it better than anyone and where the best places are
 
 Choose a hiding spot
 
-[img[assets/Monster.jpg]]
+[img[assets/updated monster.gif]]
 [[Basement|Scene 5a: The Basement]]
 [[The closet|Scene 5b (The Closet)]]
 [[Under the bed|Scene 5c (Under the bed)]]
@@ -245,7 +245,7 @@ Then you hear the bed springs squeak above your head.
 You have a feeling that you wouldn’t get very far if you tried to hide. So you decide to [[run| Scene 7 ]].
 <<audio "see_monster" stop>>
 <<audio "run" loop play volume 0.40>>
-[img[assets/Monster.jpg]]
+[img[assets/updated monster.gif]]
 <<audio "windy_creaky_old_house" stop>>
 <<audio "running_through_leaves" loop play>>
 
@@ -316,7 +316,7 @@ The voice crackles through your ears like static. Something is behind you, and e
 
 <span class = "dialogue">''WHAT DO YOU WANT TO P̷L̵A̴Y̵ ̸N̴E̶X̶T̴''</span>
 
-[img[assets/Monster.jpg]]
+[img[assets/updated monster.gif]]
 [["\"I don’t want to play with you.\"" | Scene 11: Stand your ground]]
 <<audio "see_monster" stop>>
 <<audio "running_through_leaves" stop>>
@@ -331,7 +331,7 @@ The static in your head falters for a moment. You get the sense that it’s take
 
 ''I̸T̷'̶S̴ ̶J̶U̵S̷T̴ ̶U̷S̶ ̷N̴O̷W̷''</span>
 
-[img[assets/Monster.jpg]]
+[img[assets/updated monster.gif]]
 [["\"I’m sick of you!\"" |Scene 12: The Monster fights back]]
 [["\"Get out.\"" | Scene 12: The Monster fights back]]
 
@@ -347,7 +347,7 @@ The not-so-distant rumble of thunder outside your house reminds you that the sto
 
 ''W̵H̶O̴ ̴D̴O̶ ̸Y̷O̶U̵ ̴T̷H̶I̵N̴K̷ ̵Y̵O̶U̵'̴R̷E̷ ̴S̵P̸E̷A̶K̶I̴N̵G̷ ̸T̵O̶̵͇̓''</span>
 
-[img[assets/Monster.jpg]]
+[img[assets/updated monster.gif]]
 [["\"Nothing worth my time.\"" | Scene 13: The Monster weakens]]
 [["\"I’m not afraid of you.\"" | Scene 13: The Monster weakens]]
 [["\"Shut up.\"" | Scene 13: The Monster weakens]]
@@ -369,7 +369,7 @@ Now you know why the voice sounds so familiar. You’ve heard it many times befo
 
 ''Ẅ̶͍́̕I̴̘͐͋͝T̸͕͕͗ͅḦ̴̞̾̉Ô̴̮̚U̵̻̗̅͠Ṱ̷͑̇́ ̸̤̆͑M̸̯͖̼̐͌̃Ë̶̳̥͘̕ ̸͉̺̉̉Y̷̫̚Ơ̸͍͍̙̾̿U̴͇̚ ̶͖͖͔͛͗͝Ā̸͍̊Ṙ̸͓Ë̷̡̳͠ ̸̠͂N̵̗̟͗O̴̦̐̾́T̵̲̔̅̈͜H̵̻͚̊̿̔I̸̼̙̼̍N̶̦̭͂́͝Ǵ̸͎͕''</span>
 
-[img[assets/Monster.jpg]]
+[img[assets/updated monster.gif]]
 [["\"You don’t know that for sure.\"" | Scene 14: The Monster dies]]
 [["\"I have to try.\"" | Scene 14: The Monster dies]]
 [["\"I’m not alone.\"" | Scene 14: The Monster dies]]
@@ -390,7 +390,7 @@ The wind roars outside, hard enough to rattle the windows. But you aren’t afra
 
 ''A̴̡̬̯͖͚̜̹͕̓̓̈́̈͘ͅN̷̡͕̣̝͇̩̻̳̜͒̊̔̀̏̎͐̆̑͘͝ͅD̶͓̪̜̯̰͙̑͑̓͛̒̕̚͜͜ ̸̡̢̝̲̤̠̮̗̲̘̘̓͛̃̆̋̈͝ͅÝ̵̢̡̤̥̘̻̲͚̱̬̦̲͔͠O̸̡̫̥͔̣̬̺̥͎̞̭͓̐͋͂̇̊́͑͊̃̓̅̀̍̔͂͊̎̈́̅̚͝U̷͓̩̖̼͔͓̦͖̬̖̫̭̳͖̦̩̜̼͍͍̗̓̓̏͘ͅ'̴̢̡̡̯̥͈̝̜͚̙͖̻̣̜̼͇̹͖͈͙̦̘́̿͛͐̇̀͛͆̏̋͌̅͘͘͝Ŗ̵̩̟̲͓̬̙̩͍͖̩͓̩̮̜̳̭̫̉̔̌́͊̂̔͋̈́̈́͊͌̿̊̍̋̆̔̚͝͝ͅȨ̶̭̠͎͖̤̖̳̻̜̀̎̃ ̷̧̧̧̡͎̲̗͙̺͚̭̣͔̪͐̽̍̄̏͛̈́́̌̔͒͆̎̈́͘͠͠S̴̢̨̢̮̗͈͕͈̩̖̠̄̾̈̿̇͑̕Ǫ̸̢̡͓̠̟̖̳͇̜̤̫̩͜͠ ̶̨̛͎̬̳̤̣̱̹̺̩̟̹͍̗͎͕̮̺̝̭͉̍̈́͘ͅÁ̸̛̛͔͕͍̤͕̣̺͋̿͆͊͒̊̿̉͘̚̕͘͘͜͜͜L̴̛͕͉̥̮͚̳̞̾͝Ö̴͉́́͆̑͑̀͌͘͝N̸̢̮̭̙̖̙̬̺̱̟̹̳̏̌̏ͅͅͅE̸̡̡̛̟̺̼̞̝̗͖̓̔̈͂̉''</span>
 
-[img[assets/Monster.jpg]]
+[img[assets/updated monster.gif]]
 [["\"You don’t control me.\"" | Scene 15: TRUE END]]
 [["\"You always lie.\"" | Scene 15: TRUE END]]
 [["\"I told you, I’m not alone.\"" | Scene 15: TRUE END]]
