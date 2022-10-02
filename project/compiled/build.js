@@ -1,1 +1,1 @@
-"use strict";config.history.controls=!1,$((function(){for(var t=$(".jittery"),n=t.text().split(""),s="",i=0;i<n.length;i++)s+="<span>"+n[i]+"</span>";t.empty().append(s),$.each($("span",t),(function(t){$(this).css("animation-delay","-"+t+"70ms")}))}));
+"use strict";config.history.controls=!1;

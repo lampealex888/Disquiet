@@ -46,6 +46,7 @@ That's when you hear it.
 <<if $currently_playing is false>><<audio "intro" loop play>><<set $currently_playing to true>><</if>>
 <<audio "windy_creaky_old_house" loop play>>
 <<audio "thunder" loop play>>
+<<audio "true_end" stop>>
 
 :: Scene 1a: Look out the window
 You sit up on your knees to get a better look outside. It's pitch black. Through the rain, you can barely make out the shape of the trees that surround your property.
