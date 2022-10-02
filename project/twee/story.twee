@@ -19,7 +19,9 @@ Disquiet
 <<cacheaudio "soft_wind" "assets/459977__florianreichelt__soft-wind.mp3">>
 
 :: Start
-A text-based horror game where failure is not the end. Three routes. For best experience, play in a dark room and wear headphones.
+A text-based horror game where failure is not the end. Three routes. 
+
+For best experience, play in a dark room and wear headphones.
 [img[assets/disquiet.jpg]]
 [[Start Game | Scene 1: In your house]]
 <<audio "true_end" stop>>
@@ -258,7 +260,11 @@ Behind you, a voice howls with the wind, furious.
 [[Run to the side of the house | 7b ]]
 
 :: 7a
-You plunge into the cornfield. The tall stalks smack your face as you run and frantically push past them. You can hear the monster tearing at the cornstalks just behind you. You know that it is not far behind. Your outstretched hand breaks free of the field as your foot slips in the wet mud, and you slide uncontrollably down the unseen hill at the edge of the field. The only thing you see is mud and rain as you tumble over yourself down the steep hill.
+You plunge into the cornfield. The tall stalks smack your face as you run and frantically push past them. You can hear the monster tearing at the cornstalks just behind you. 
+
+You know that it is not far behind. Your outstretched hand breaks free of the field as your foot slips in the wet mud, and you slide uncontrollably down the unseen hill at the edge of the field. 
+
+The only thing you see is mud and rain as you tumble over yourself down the steep hill.
 
 [img[assets/Cornfield 1.jpg]]
 [[Crawl | Scene 8]]
