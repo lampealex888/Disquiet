@@ -283,7 +283,7 @@ You take the leftmost path that leads around the side of the house instead. The 
 :: Scene 8 
 Finally, your body stops tumbling and you come to a stop at the foot of the hill. You crawl through the mud, pulling yourself along by your arms. The ground squishes under your fingers as you dig them into the sludge. You keep going until you feel solid earth and the sturdy body of a log blocking your path.
 
-Pulling yourself up, you slump against the log. Your legs feel like they’re being stabbed by broken glass and your back hurts. You’re in no shape to walk, nor do you want to. All you want to do, really, is lie there.
+Pulling yourself up, you slump against the log. <span class ="jittery">Your legs feel like they’re being stabbed by broken glass and your back hurts.</span> You’re in no shape to walk, nor do you want to. All you want to do, really, is lie there.
 
 [img[assets/Bottom of the hill.jpg]]
 [[Wait | Scene 9 (NORMAL END)]]
