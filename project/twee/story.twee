@@ -136,7 +136,7 @@ You freeze like a cornered animal. Every muscle in your body locks up as the sha
 
 Each word is like a stake through your temples and a knife in your heart. Your breath sticks in your throat; trying to suck in a breath as the knife just twists in deeper.
 
-[img[assets/Living room 3.jpg]]
+[img[assets/Monster.jpg]]
 [[Go back|Scene 2: You wake up]]
 <<set $scene_2b_key to true>>
 
@@ -154,7 +154,7 @@ You regain control of your body and roll off the couch, hitting the ground with 
 
 Your only choice is obvious.
 
-[img[assets/Living room 3.jpg]]
+[img[assets/Monster.jpg]]
 [[Hide|Scene 4: Hide]]
 <<if $ending_1_key is true>>[[Run outside|Scene 6: Run Outside]]<</if>>
 <<if $ending_1_key is true and $ending_2_key is true>>[[Stand your ground|Scene 10: Stand your ground]]<</if>>
@@ -171,7 +171,7 @@ This is your house. You know it better than anyone and where the best places are
 
 Choose a hiding spot
 
-[img[assets/Living room 3.jpg]]
+[img[assets/Monster.jpg]]
 [[Basement|Scene 5a: The Basement]]
 [[The closet|Scene 5b (The Closet)]]
 [[Under the bed|Scene 5c (Under the bed)]]
@@ -182,7 +182,7 @@ You run into the kitchen, blindly groping around for the walls, a chair, anythin
 
 Not that you could tear it off, of course. You’re not that strong, and certainly not strong enough to fight back, are you?
 
-You shut the door behind you and go downstairs, two steps at a time. There’s only one window in the cellar and it’s tiny, about the size and width of a shoebox. Not even close to being big enough for you to fit through. A flash of lightning illuminates the musty-smelling room where you can see piles of newspapers, old sports equipment, and boxes filled with toys you haven’t looked at since you were a child.
+You shut the door behind you and go downstairs, two steps at a time. There’s only one window in the cellar and it’s tiny, about the size and width of a shoebox. Not even close to being big enough for you to fit through.
 
 You beeline for the spot tucked behind the stairs, conceal yourself behind a box of old clothes, and listen.
 
@@ -242,9 +242,9 @@ Then you hear the bed springs squeak above your head.
 You have a feeling that you wouldn’t get very far if you tried to hide. So you decide to [[run| Scene 7 ]].
 <<audio "see_monster" stop>>
 <<audio "run" loop play volume 0.40>>
+[img[assets/Monster.jpg]]
 <<audio "windy_creaky_old_house" stop>>
 <<audio "running_through_leaves" loop play>>
-[img[assets/Living room 1.jpg]]
 
 :: Scene 7
 Your neighbors run a farm, but they aren’t home. In between you and your neighbor's house is a vast cornfield that stretches out far past the limits of your combined properties. The stalks rustle in the rain and wind. The fallen corn husks crunch and crinkle under your feet as you stand at the edge of the field. 
@@ -268,7 +268,7 @@ You plunge into the cornfield. The tall stalks smack your face as you run and fr
 :: 7b
 You take the leftmost path that leads around the side of the house instead. The rain hits your face, making it impossible to see clearly. The porch lights are blurry in your eyes; Suddenly, you go from seeing nothing to seeing too much. Your feet get tangled up, and before you can do anything to stop your momentum, you find yourself tripping and sliding through the mud down a long hill.
 
-[img[assets/House 1.jpg]]
+[img[assets/Outside 1.jpg]]
 [[Crawl | Scene 8]]
 <<audio "run" stop>>
 <<audio "cornfield" loop play>>
@@ -309,7 +309,7 @@ The voice crackles through your ears like static. Something is behind you, and e
 
 <span class = "dialogue">''WHAT DO YOU WANT TO P̷L̵A̴Y̵ ̸N̴E̶X̶T̴''</span>
 
-[img[assets/Living room 2.jpg]]
+[img[assets/Monster.jpg]]
 [["\"I don’t want to play with you.\"" | Scene 11: Stand your ground]]
 <<audio "see_monster" stop>>
 <<audio "running_through_leaves" stop>>
@@ -324,7 +324,7 @@ The static in your head falters for a moment. You get the sense that it’s take
 
 ''I̸T̷'̶S̴ ̶J̶U̵S̷T̴ ̶U̷S̶ ̷N̴O̷W̷''</span>
 
-[img[assets/Living room 2.jpg]]
+[img[assets/Monster.jpg]]
 [["\"I’m sick of you!\"" |Scene 12: The Monster fights back]]
 [["\"Get out.\"" | Scene 12: The Monster fights back]]
 
@@ -340,7 +340,7 @@ The not-so-distant rumble of thunder outside your house reminds you that the sto
 
 ''W̵H̶O̴ ̴D̴O̶ ̸Y̷O̶U̵ ̴T̷H̶I̵N̴K̷ ̵Y̵O̶U̵'̴R̷E̷ ̴S̵P̸E̷A̶K̶I̴N̵G̷ ̸T̵O̶̵͇̓''</span>
 
-[img[assets/Living room 2.jpg]]
+[img[assets/Monster.jpg]]
 [["\"Nothing worth my time.\"" | Scene 13: The Monster weakens]]
 [["\"I’m not afraid of you.\"" | Scene 13: The Monster weakens]]
 [["\"Shut up.\"" | Scene 13: The Monster weakens]]
@@ -362,7 +362,7 @@ Now you know why the voice sounds so familiar. You’ve heard it many times befo
 
 ''Ẅ̶͍́̕I̴̘͐͋͝T̸͕͕͗ͅḦ̴̞̾̉Ô̴̮̚U̵̻̗̅͠Ṱ̷͑̇́ ̸̤̆͑M̸̯͖̼̐͌̃Ë̶̳̥͘̕ ̸͉̺̉̉Y̷̫̚Ơ̸͍͍̙̾̿U̴͇̚ ̶͖͖͔͛͗͝Ā̸͍̊Ṙ̸͓Ë̷̡̳͠ ̸̠͂N̵̗̟͗O̴̦̐̾́T̵̲̔̅̈͜H̵̻͚̊̿̔I̸̼̙̼̍N̶̦̭͂́͝Ǵ̸͎͕''</span>
 
-[img[assets/Living room 2.jpg]]
+[img[assets/Monster.jpg]]
 [["\"You don’t know that for sure.\"" | Scene 14: The Monster dies]]
 [["\"I have to try.\"" | Scene 14: The Monster dies]]
 [["\"I’m not alone.\"" | Scene 14: The Monster dies]]
@@ -383,13 +383,12 @@ The wind roars outside, hard enough to rattle the windows. But you aren’t afra
 
 ''A̴̡̬̯͖͚̜̹͕̓̓̈́̈͘ͅN̷̡͕̣̝͇̩̻̳̜͒̊̔̀̏̎͐̆̑͘͝ͅD̶͓̪̜̯̰͙̑͑̓͛̒̕̚͜͜ ̸̡̢̝̲̤̠̮̗̲̘̘̓͛̃̆̋̈͝ͅÝ̵̢̡̤̥̘̻̲͚̱̬̦̲͔͠O̸̡̫̥͔̣̬̺̥͎̞̭͓̐͋͂̇̊́͑͊̃̓̅̀̍̔͂͊̎̈́̅̚͝U̷͓̩̖̼͔͓̦͖̬̖̫̭̳͖̦̩̜̼͍͍̗̓̓̏͘ͅ'̴̢̡̡̯̥͈̝̜͚̙͖̻̣̜̼͇̹͖͈͙̦̘́̿͛͐̇̀͛͆̏̋͌̅͘͘͝Ŗ̵̩̟̲͓̬̙̩͍͖̩͓̩̮̜̳̭̫̉̔̌́͊̂̔͋̈́̈́͊͌̿̊̍̋̆̔̚͝͝ͅȨ̶̭̠͎͖̤̖̳̻̜̀̎̃ ̷̧̧̧̡͎̲̗͙̺͚̭̣͔̪͐̽̍̄̏͛̈́́̌̔͒͆̎̈́͘͠͠S̴̢̨̢̮̗͈͕͈̩̖̠̄̾̈̿̇͑̕Ǫ̸̢̡͓̠̟̖̳͇̜̤̫̩͜͠ ̶̨̛͎̬̳̤̣̱̹̺̩̟̹͍̗͎͕̮̺̝̭͉̍̈́͘ͅÁ̸̛̛͔͕͍̤͕̣̺͋̿͆͊͒̊̿̉͘̚̕͘͘͜͜͜L̴̛͕͉̥̮͚̳̞̾͝Ö̴͉́́͆̑͑̀͌͘͝N̸̢̮̭̙̖̙̬̺̱̟̹̳̏̌̏ͅͅͅE̸̡̡̛̟̺̼̞̝̗͖̓̔̈͂̉''</span>
 
-[img[assets/Living room 2.jpg]]
+[img[assets/Monster.jpg]]
 [["\"You don’t control me.\"" | Scene 15: TRUE END]]
 [["\"You always lie.\"" | Scene 15: TRUE END]]
 [["\"I told you, I’m not alone.\"" | Scene 15: TRUE END]]
 
 :: Scene 15: TRUE END
-[img[assets/True end.jpg]]
 [["\"I’m never alone.\""|Scene 15b]]
 [["\"It won’t end this way.\""|Scene 15b]]
 [["\"There’s always another option.\""|Scene 15b]]
@@ -399,17 +398,14 @@ The wind roars outside, hard enough to rattle the windows. But you aren’t afra
 <<audio "true_end" loop play>>
 
 :: Scene 15b
-[img[assets/True end.jpg]]
 [["\"I am capable of so much more than you think I am. I’m stronger than you are.\""|Scene 15c]]
 [["\"I might not be able to believe it right now, but that doesn’t mean it isn’t true. I just have to be patient with myself.\""|Scene 15c]]
 [["\"There’s always a chance to change and do better. To be better. To keep going.\""|Scene 15c]]
 
 :: Scene 15c
-[img[assets/True end.jpg]]
 [["\"You’re here because I fed you. I let you grow. I hid from you.  I ran from you.\""|Scene 15d]]
 
 :: Scene 15d
-[img[assets/True end.jpg]]
 [["\"But not anymore.\""|Scene 15e]]
 
 :: Scene 15e
