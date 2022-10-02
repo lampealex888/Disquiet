@@ -10,10 +10,17 @@ Disquiet
 <<cacheaudio "game_over_2" "assets/Game Over (no.2).mp3">>
 <<cacheaudio "confront" "assets/Confront.mp3">>
 <<cacheaudio "true_end" "assets/true end.mp3">>
-<<cacheaudio "monster_noise" "assets/Monster 1.mp3">>
+<<cacheaudio "monster_1" "assets/Monster 1.mp3">>
+<<cacheaudio "monster_2" "assets/Monster 2.mp3">>
+<<cacheaudio "monster_3" "assets/Monster 3.mp3">>
+<<cacheaudio "windy_creaky_old_house" "393808__pfranzen__windy-creaky-old-house-ambience.ogg">>
+<<cacheaudio "thunder" "assets/244053__lennyboy__thunder.ogg">>
+<<cacheaudio "running_through_leaves" "assets/630011__trexlasso__running-through-leaves.wav">>
+<<cacheaudio "soft_wind" "assets/459977__florianreichelt__soft-wind.mp3">>
 
 :: Start
 A text-based horror game where failure is not the end. Three routes. For best experience, wear headphones.
+[img[assets/House 2.jpg]]
 [[Start Game | Scene 1: In your house]]
 <<audio "true_end" stop>>
 
@@ -29,12 +36,13 @@ A cartoon is playing on the TV across from the couch where you are sitting.You c
 Behind the couch is a window. Sheets of rain spatter the glass as a storm rages outside. It started an hour ago and it shows no signs of stopping. 
 
 That's when you hear it.
-<<set $currently_playing to false>>
-<<if $currently_playing is false>><<audio "intro" loop play>><<set $currently_playing to true>><</if>>
 
+[img[assets/Living room 3.jpg]]
 [[What is that?|Scene 1.5]]
 <<set $currently_playing to false>>
-<<if $currently_playing is false>><<audio "monster_noise" play>><<set $currently_playing to true>><</if>>
+<<if $currently_playing is false>><<audio "intro" loop play>><<set $currently_playing to true>><</if>>
+<<audio "windy_creaky_old_house" loop play>>
+<<audio "thunder" loop play>>
 
 :: Scene 1a: Look out the window
 You sit up on your knees to get a better look outside. It's pitch black. Through the rain, you can barely make out the shape of the trees that surround your property.
@@ -43,6 +51,7 @@ This far out from the city, you can usually see the stars. But tonight, you're l
 
 There's no one there. 
 
+[img[assets/Outside 1.jpg]]
 [[You don't see anything outside|Scene 1: In your house]]
 <<set $scene_1a_key to true>>
 
@@ -51,6 +60,7 @@ It's an old house. Don't those always make weird sounds at night? It's practical
 
 It must have been the wind. 
 
+[img[assets/Living room 1.jpg]]
 [[You ignore the sound|Scene 1: In your house]]
 <<set $scene_1b_key to true>>
 
@@ -60,6 +70,7 @@ Just a short one. You even set an alarm on your phone for an hour, just to prove
 You lie back on the couch and close your eyes. 
 Six hours pass.
 
+[img[assets/Living room 1.jpg]]
 [[You go to sleep|Scene 1: In your house]]
 
 :: Scene 1.5
@@ -75,6 +86,7 @@ You can't quite begin to describe it, but it sounds familiar.
 
 What should you do?
 
+[img[assets/Living room 2.jpg]]
 <<if $scene_1a_key isnot true>>[[Look out the window|Scene 1a: Look out the window]]<</if>>
 <<if $scene_1b_key isnot true>>[[Ignore it|Scene 1b: Ignore the sound]]<</if>>
 <<if $scene_1a_key is true and $scene_1b_key is true>>[[Go to sleep|Scene 2: You wake up]]<</if>>
@@ -97,11 +109,14 @@ It's dark when you open your eyes. At some point in the night the power must hav
 
 Including the incomprehensible shape hovering directly over the couch.
 
+[img[assets/Monster.jpg]]
 [[Run|Scene 3: Run (BRANCH SPLIT)]]
 <<if $scene_2b_key isnot true>>[[Freeze|Scene 2b Freeze]]<</if>>
 <<if $scene_2c_key isnot true>>[[Shut your eyes|Scene 2c Shut your eyes]]<</if>>
 <<if $ending_1_key is true and $ending_2_key is true>>[[Stand your ground|Scene 10: Stand your ground]]<</if>>
 <<audio "intro" stop>>
+<<audio "monster_1" play volume 0.50>>
+<<audio "thunder" stop>>
 <<set $currently_playing to false>>
 <<if $currently_playing is false>><<audio "see_monster" loop play volume 0.60>><<set $currently_playing to true>><</if>>
 <!-- Alex please add monster SFX noise here and give me a kiss  -->
@@ -121,6 +136,7 @@ You freeze like a cornered animal. Every muscle in your body locks up as the sha
 
 Each word is like a stake through your temples and a knife in your heart. Your breath sticks in your throat; trying to suck in a breath as the knife just twists in deeper.
 
+[img[assets/Monster.jpg]]
 [[Go back|Scene 2: You wake up]]
 <<set $scene_2b_key to true>>
 
@@ -138,6 +154,7 @@ You regain control of your body and roll off the couch, hitting the ground with 
 
 Your only choice is obvious.
 
+[img[assets/Monster.jpg]]
 [[Hide|Scene 4: Hide]]
 <<if $ending_1_key is true>>[[Run outside|Scene 6: Run Outside]]<</if>>
 <<if $ending_1_key is true and $ending_2_key is true>>[[Stand your ground|Scene 10: Stand your ground]]<</if>>
@@ -145,23 +162,27 @@ Your only choice is obvious.
 <<if $currently_playing is false>><<audio "see_monster" loop play>><<set $currently_playing to true>><</if>>
 <<audio "game_over_1" stop>>
 <<audio "game_over_2" stop>>
+<<audio "monster_1" stop>>
 <<audio "see_monster" loop play>>
+<<audio "soft_wind" play>>
 
 :: Scene 4: Hide
 This is your house. You know it better than anyone and where the best places are to hide.
 
 Choose a hiding spot
 
+[img[assets/Monster.jpg]]
 [[Basement|Scene 5a: The Basement]]
 [[The closet|Scene 5b (The Closet)]]
 [[Under the bed|Scene 5c (Under the bed)]]
+<<audio "running_through_leaves" stop>>
 
 :: Scene 5a: The Basement
 You run into the kitchen, blindly groping around for the walls, a chair, anything to help you as you feel your way to the corner of the room. Your hand hits the handle of the door to the basement, and you yank it open so fast you feel like you could tear the hinges off.
 
 Not that you could tear it off, of course. You’re not that strong, and certainly not strong enough to fight back, are you?
 
-You shut the door behind you and go downstairs, two steps at a time. There’s only one window in the cellar and it’s tiny, about the size and width of a shoebox. Not even close to being big enough for you to fit through. A flash of lightning illuminates the musty-smelling room where you can see piles of newspapers, old sports equipment, and boxes filled with toys you haven’t looked at since you were a child.
+You shut the door behind you and go downstairs, two steps at a time. There’s only one window in the cellar and it’s tiny, about the size and width of a shoebox. Not even close to being big enough for you to fit through.
 
 You beeline for the spot tucked behind the stairs, conceal yourself behind a box of old clothes, and listen.
 
@@ -173,6 +194,7 @@ Very slowly, the door to the cellar creaks open, so quiet you can only hear it w
 
 ''I̷ ̸F̵O̴U̷N̶D̶ ̸Y̷O̶U̷''</span>
 
+[img[assets/Basement 1.jpg]]
 [[BAD END|Scene 3: Run (BRANCH SPLIT)]]
 <<set $ending_1_key to true>>
 <<audio "see_monster" stop>>
@@ -191,6 +213,7 @@ You can hear something crawling across the floor, moving so stealthily you might
 
 ''I̵ ̵W̴I̵L̴L̸ ̸A̷L̵W̶A̸Y̵S̷ ̶B̶E̸ ̵H̷E̵R̸E̵''</span>
 
+[img[assets/Closet.jpg]]
 [[BAD END|Scene 3: Run (BRANCH SPLIT)]]
 <<set $ending_1_key to true>>
 <<audio "see_monster" stop>>
@@ -209,6 +232,7 @@ Then you hear the bed springs squeak above your head.
 
 <span class = "dialogue">''Y̸O̶U̷ ̷C̷A̸N̷N̶O̷T̴ ̸H̷I̴D̵E̸ ̷F̵R̴I̴E̸N̶D̶'' <!-- TODO: make text glitchy --></span>
 
+[img[assets/Bedroom.jpg]]
 [[BAD END|Scene 3: Run (BRANCH SPLIT)]]
 <<set $ending_1_key to true>>
 <<audio "see_monster" stop>>
@@ -218,6 +242,9 @@ Then you hear the bed springs squeak above your head.
 You have a feeling that you wouldn’t get very far if you tried to hide. So you decide to [[run| Scene 7 ]].
 <<audio "see_monster" stop>>
 <<audio "run" loop play volume 0.40>>
+[img[assets/Monster.jpg]]
+<<audio "windy_creaky_old_house" stop>>
+<<audio "running_through_leaves" loop play>>
 
 :: Scene 7
 Your neighbors run a farm, but they aren’t home. In between you and your neighbor's house is a vast cornfield that stretches out far past the limits of your combined properties. The stalks rustle in the rain and wind. The fallen corn husks crunch and crinkle under your feet as you stand at the edge of the field. 
@@ -225,6 +252,7 @@ Your neighbors run a farm, but they aren’t home. In between you and your neigh
 Behind you, a voice howls with the wind, furious.
 
 <span class = "dialogue">''D̷͎͆Ǒ̷̜N̴͍͆’̸̳̔T̷͉̀ ̷͇̌R̵̙̃Ǘ̸̫N̵̪͆ ̸̬̌F̴̃͜R̴͙̚I̶̞͘E̸͇͠Ñ̴̨D̴̜͂''</span>
+[img[assets/Outside 1.jpg]]
 
 [[Run deeper into the cornfield | 7a]]
 [[Run to the side of the house | 7b ]]
@@ -232,6 +260,7 @@ Behind you, a voice howls with the wind, furious.
 :: 7a
 You plunge into the cornfield. The tall stalks smack your face as you run and frantically push past them. You can hear the monster tearing at the cornstalks just behind you. You know that it is not far behind. Your outstretched hand breaks free of the field as your foot slips in the wet mud, and you slide uncontrollably down the unseen hill at the edge of the field. The only thing you see is mud and rain as you tumble over yourself down the steep hill.
 
+[img[assets/Cornfield 1.jpg]]
 [[Crawl | Scene 8]]
 <<audio "run" stop>>
 <<audio "cornfield" loop play>>
@@ -239,6 +268,7 @@ You plunge into the cornfield. The tall stalks smack your face as you run and fr
 :: 7b
 You take the leftmost path that leads around the side of the house instead. The rain hits your face, making it impossible to see clearly. The porch lights are blurry in your eyes; Suddenly, you go from seeing nothing to seeing too much. Your feet get tangled up, and before you can do anything to stop your momentum, you find yourself tripping and sliding through the mud down a long hill.
 
+[img[assets/Outside 1.jpg]]
 [[Crawl | Scene 8]]
 <<audio "run" stop>>
 <<audio "cornfield" loop play>>
@@ -248,11 +278,14 @@ Finally, your body stops tumbling and you come to a stop at the foot of the hill
 
 Pulling yourself up, you slump against the log. Your legs feel like they’re being stabbed by broken glass and your back hurts. You’re in no shape to walk, nor do you want to. All you want to do, really, is lie there.
 
+[img[assets/Bottom of the hill.jpg]]
 [[Wait | Scene 9 (NORMAL END)]]
+<<audio "running_through_leaves" stop>>
 
 :: Scene 9 (NORMAL END)
 You sit with your back against the log and wait for help to come. The rain continues to fall.
 
+[img[assets/Bottom of the hill.jpg]]
 [[Wait|Scene 9 (NORMAL END)]]
 [[Give up|Scene 9.5]]
 
@@ -261,6 +294,7 @@ The rain keeps pouring down. You're cold and hurt and tired.
 
 You don’t want to do this anymore. 
 
+[img[assets/Bottom of the hill.jpg]]
 [[NORMAL END | Scene 3: Run (BRANCH SPLIT)]]
 <<set $ending_2_key to true>>
 <<audio "cornfield" stop>>
@@ -275,8 +309,10 @@ The voice crackles through your ears like static. Something is behind you, and e
 
 <span class = "dialogue">''WHAT DO YOU WANT TO P̷L̵A̴Y̵ ̸N̴E̶X̶T̴''</span>
 
+[img[assets/Monster.jpg]]
 [["\"I don’t want to play with you.\"" | Scene 11: Stand your ground]]
 <<audio "see_monster" stop>>
+<<audio "running_through_leaves" stop>>
 <<audio "confront" loop play>>
 
 :: Scene 11: Stand your ground
@@ -288,6 +324,7 @@ The static in your head falters for a moment. You get the sense that it’s take
 
 ''I̸T̷'̶S̴ ̶J̶U̵S̷T̴ ̶U̷S̶ ̷N̴O̷W̷''</span>
 
+[img[assets/Monster.jpg]]
 [["\"I’m sick of you!\"" |Scene 12: The Monster fights back]]
 [["\"Get out.\"" | Scene 12: The Monster fights back]]
 
@@ -303,10 +340,11 @@ The not-so-distant rumble of thunder outside your house reminds you that the sto
 
 ''W̵H̶O̴ ̴D̴O̶ ̸Y̷O̶U̵ ̴T̷H̶I̵N̴K̷ ̵Y̵O̶U̵'̴R̷E̷ ̴S̵P̸E̷A̶K̶I̴N̵G̷ ̸T̵O̶̵͇̓''</span>
 
+[img[assets/Monster.jpg]]
 [["\"Nothing worth my time.\"" | Scene 13: The Monster weakens]]
 [["\"I’m not afraid of you.\"" | Scene 13: The Monster weakens]]
 [["\"Shut up.\"" | Scene 13: The Monster weakens]]
-
+<<audio "monster_2" play>>
 
 :: Scene 13: The Monster weakens
 
@@ -324,9 +362,12 @@ Now you know why the voice sounds so familiar. You’ve heard it many times befo
 
 ''Ẅ̶͍́̕I̴̘͐͋͝T̸͕͕͗ͅḦ̴̞̾̉Ô̴̮̚U̵̻̗̅͠Ṱ̷͑̇́ ̸̤̆͑M̸̯͖̼̐͌̃Ë̶̳̥͘̕ ̸͉̺̉̉Y̷̫̚Ơ̸͍͍̙̾̿U̴͇̚ ̶͖͖͔͛͗͝Ā̸͍̊Ṙ̸͓Ë̷̡̳͠ ̸̠͂N̵̗̟͗O̴̦̐̾́T̵̲̔̅̈͜H̵̻͚̊̿̔I̸̼̙̼̍N̶̦̭͂́͝Ǵ̸͎͕''</span>
 
+[img[assets/Monster.jpg]]
 [["\"You don’t know that for sure.\"" | Scene 14: The Monster dies]]
 [["\"I have to try.\"" | Scene 14: The Monster dies]]
 [["\"I’m not alone.\"" | Scene 14: The Monster dies]]
+<<audio "monster_2" stop>>
+<<audio "monster_3" play>>
 
 :: Scene 14: The Monster dies
 
@@ -342,6 +383,7 @@ The wind roars outside, hard enough to rattle the windows. But you aren’t afra
 
 ''A̴̡̬̯͖͚̜̹͕̓̓̈́̈͘ͅN̷̡͕̣̝͇̩̻̳̜͒̊̔̀̏̎͐̆̑͘͝ͅD̶͓̪̜̯̰͙̑͑̓͛̒̕̚͜͜ ̸̡̢̝̲̤̠̮̗̲̘̘̓͛̃̆̋̈͝ͅÝ̵̢̡̤̥̘̻̲͚̱̬̦̲͔͠O̸̡̫̥͔̣̬̺̥͎̞̭͓̐͋͂̇̊́͑͊̃̓̅̀̍̔͂͊̎̈́̅̚͝U̷͓̩̖̼͔͓̦͖̬̖̫̭̳͖̦̩̜̼͍͍̗̓̓̏͘ͅ'̴̢̡̡̯̥͈̝̜͚̙͖̻̣̜̼͇̹͖͈͙̦̘́̿͛͐̇̀͛͆̏̋͌̅͘͘͝Ŗ̵̩̟̲͓̬̙̩͍͖̩͓̩̮̜̳̭̫̉̔̌́͊̂̔͋̈́̈́͊͌̿̊̍̋̆̔̚͝͝ͅȨ̶̭̠͎͖̤̖̳̻̜̀̎̃ ̷̧̧̧̡͎̲̗͙̺͚̭̣͔̪͐̽̍̄̏͛̈́́̌̔͒͆̎̈́͘͠͠S̴̢̨̢̮̗͈͕͈̩̖̠̄̾̈̿̇͑̕Ǫ̸̢̡͓̠̟̖̳͇̜̤̫̩͜͠ ̶̨̛͎̬̳̤̣̱̹̺̩̟̹͍̗͎͕̮̺̝̭͉̍̈́͘ͅÁ̸̛̛͔͕͍̤͕̣̺͋̿͆͊͒̊̿̉͘̚̕͘͘͜͜͜L̴̛͕͉̥̮͚̳̞̾͝Ö̴͉́́͆̑͑̀͌͘͝N̸̢̮̭̙̖̙̬̺̱̟̹̳̏̌̏ͅͅͅE̸̡̡̛̟̺̼̞̝̗͖̓̔̈͂̉''</span>
 
+[img[assets/Monster.jpg]]
 [["\"You don’t control me.\"" | Scene 15: TRUE END]]
 [["\"You always lie.\"" | Scene 15: TRUE END]]
 [["\"I told you, I’m not alone.\"" | Scene 15: TRUE END]]
@@ -351,6 +393,8 @@ The wind roars outside, hard enough to rattle the windows. But you aren’t afra
 [["\"It won’t end this way.\""|Scene 15b]]
 [["\"There’s always another option.\""|Scene 15b]]
 <<audio "confront" stop>>
+<<audio "monster_2" stop>>
+<<audio "monster_3" stop">>
 <<audio "true_end" loop play>>
 
 :: Scene 15b
@@ -369,5 +413,6 @@ This time, I’m fighting back.
 
 TRUE END
 
-[[Play again|Scene 1: In your house]]
-[[Menu|Start]]
+[img[assets/True end.jpg]]
+[[Play again?|Scene 1: In your house]]
+[[Main menu|Start]]
